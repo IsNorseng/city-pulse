@@ -1,0 +1,364 @@
+{
+  "verified_at": "2026-10-04",
+  "audit_method": "Direct web open of all three original corp.cian.ru pages, reading their current article bodies, application tables and methodology sections. No search snippets used for acceptance.",
+  "app_source": "data/verified-observations.json",
+  "summary": {
+    "original_pages": 3,
+    "directly_accessible_pages": 3,
+    "numeric_observation_records": 8,
+    "numeric_records_matching_ui": 8,
+    "numeric_discrepancies": 0,
+    "unverified_numeric_records": 0
+  },
+  "sources": [
+    {
+      "id": "cian_rent_sep_2026",
+      "URL": "https://corp.cian.ru/news/itogi-3-kvartala-na-rynke-arendy-vpervye-s-2020-g-stavki-nizhe-proshlogodnikh",
+      "status": "verified_direct_original",
+      "content_type": "text/html",
+      "published": "2026-09-22",
+      "publication_locator": "Article date before title; web line 27",
+      "table_locator": "Приложение, rows Краснодар and Санкт-Петербург; web lines 55–58, 70, 86",
+      "period": "2026-09",
+      "period_evidence": "Application table explicitly specifies September 2026 for average 1-room and 2-room monthly rental rates; source describes third-quarter 2026 market.",
+      "source_unit": "thousand RUB per month",
+      "metric_type": "mean",
+      "market": "long-term apartment rent",
+      "methodology_locator": "Методика; web lines 102–104",
+      "methodology": "40 largest Russian markets; 1-room and 2-room apartments excluding elite properties. Analysis uses rental market inventory and listing activity. The page does not describe lease-price verification, percentile calculation or sample size by city.",
+      "offer_context_locator": "Article paragraphs on listing views, exposure, inventory and current rental rate dynamics; web lines 32–46",
+      "offer_basis_status": "supported_by_listing_market_context",
+      "transaction_price_status": "not_claimed_or_verified",
+      "median_status": "not_a_median",
+      "exact_numeric_rows": [
+        {
+          "city": "Краснодар",
+          "row_numeric_cells": [
+            26.3,
+            -1.1,
+            2.3,
+            42.4,
+            -1.9,
+            7.6
+          ],
+          "columns": [
+            "rent_1_thousand_RUB_month",
+            "rent_1_yoy_percent",
+            "rent_1_quarter_percent",
+            "rent_2_thousand_RUB_month",
+            "rent_2_yoy_percent",
+            "rent_2_quarter_percent"
+          ],
+          "locator": "Приложение, строка Краснодар; web line 70"
+        },
+        {
+          "city": "Санкт-Петербург",
+          "row_numeric_cells": [
+            45.6,
+            -8.4,
+            8.3,
+            67.2,
+            -9.9,
+            2.1
+          ],
+          "columns": [
+            "rent_1_thousand_RUB_month",
+            "rent_1_yoy_percent",
+            "rent_1_quarter_percent",
+            "rent_2_thousand_RUB_month",
+            "rent_2_yoy_percent",
+            "rent_2_quarter_percent"
+          ],
+          "locator": "Приложение, строка Санкт-Петербург; web line 86"
+        }
+      ]
+    },
+    {
+      "id": "cian_sqm_sep_2026",
+      "URL": "https://corp.cian.ru/news/itogi-3-kvartala-na-vtorichnom-rynke-spros-vyros-na-18-tseny-na-3",
+      "status": "verified_direct_original",
+      "content_type": "text/html",
+      "published": "2026-09-28",
+      "publication_locator": "Article date before title; web line 27",
+      "table_locator": "Приложение; table header web lines 65–68; Краснодар row line 80; Санкт-Петербург row line 96",
+      "period": "2026-09",
+      "period_evidence": "Application table explicitly specifies September 2026; article states third-quarter secondary market prices.",
+      "source_unit": "thousand RUB per square metre, supported by table metric name and article context",
+      "metric_type": "mean",
+      "market": "secondary apartment sale listings",
+      "offer_basis_status": "explicitly_verified",
+      "offer_basis_locator": "Article point 2 explicitly discusses growth of offer prices, web lines 42–46",
+      "transaction_price_status": "not_transaction_prices",
+      "median_status": "not_a_median",
+      "methodology_locator": "Методика; web lines 112–114",
+      "methodology": "Average prices and active inventory cover the 40 largest markets. A separate note that completed-deal counts extend only through August relates to the demand metric, not the September price table.",
+      "exact_numeric_rows": [
+        {
+          "city": "Краснодар",
+          "row_numeric_cells": [
+            144.7,
+            0,
+            -0.8
+          ],
+          "columns": [
+            "mean_price_thousand_RUB_sqm",
+            "yoy_percent",
+            "quarter_percent"
+          ],
+          "locator": "Приложение, строка Краснодар; web line 80"
+        },
+        {
+          "city": "Санкт-Петербург",
+          "row_numeric_cells": [
+            290.8,
+            18,
+            3.6
+          ],
+          "columns": [
+            "mean_price_thousand_RUB_sqm",
+            "yoy_percent",
+            "quarter_percent"
+          ],
+          "locator": "Приложение, строка Санкт-Петербург; web line 96"
+        }
+      ]
+    },
+    {
+      "id": "cian_sale1_jan_2026",
+      "URL": "https://corp.cian.ru/news/dokhodnost-ot-sdachi-kvartiry-v-2-raza-nizhe-chem-ot-bankovskogo-vklada-no-razryv-sokrashchaetsya",
+      "status": "verified_direct_original_numeric_and_mean_secondary_scope",
+      "content_type": "text/html",
+      "published": "2026-01-13",
+      "publication_locator": "Article date before title; web line 27",
+      "table_locator": "Приложение, table header web lines 51–53; Краснодар row line 65; Санкт-Петербург row line 80",
+      "period": "2026-01",
+      "period_evidence": "Average apartment cost column explicitly specifies January 2026; text also describes start-of-2026 yield calculation.",
+      "source_unit": "million RUB per 1-room apartment",
+      "metric_type": "mean",
+      "market": "1-room apartments on secondary market",
+      "secondary_market_locator": "Article paragraphs on an apartment bought on the secondary market; web lines 35–43; methodology lines 97–101",
+      "offer_basis_status": "not_explicitly_documented_on_this_page",
+      "transaction_price_status": "not_explicitly_documented_on_this_page",
+      "median_status": "not_a_median",
+      "methodology": "Yield calculation concerns 1-room apartments acquired on the secondary market, assumes no mortgage and continuous rent through the year, and covers 40 key locations. This page does not explicitly document whether the mean apartment-price input comes from listing prices or transaction prices.",
+      "exact_numeric_rows": [
+        {
+          "city": "Краснодар",
+          "row_numeric_cells": [
+            25.8,
+            5.5,
+            6.2,
+            6,
+            5.7
+          ],
+          "columns": [
+            "rent_1_thousand_RUB_month_jan_2026",
+            "mean_sale_1_million_RUB_jan_2026",
+            "yield_jan_2025_percent",
+            "yield_jul_2025_percent",
+            "yield_jan_2026_percent"
+          ],
+          "locator": "Приложение, строка Краснодар; web line 65"
+        },
+        {
+          "city": "Санкт-Петербург",
+          "row_numeric_cells": [
+            45.4,
+            10.5,
+            5.6,
+            5.8,
+            5.2
+          ],
+          "columns": [
+            "rent_1_thousand_RUB_month_jan_2026",
+            "mean_sale_1_million_RUB_jan_2026",
+            "yield_jan_2025_percent",
+            "yield_jul_2025_percent",
+            "yield_jan_2026_percent"
+          ],
+          "locator": "Приложение, строка Санкт-Петербург; web line 80"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "cityKey": "spb",
+      "city": "Санкт-Петербург",
+      "id": "rent1",
+      "value": 45600,
+      "unit": "RUB/month",
+      "period": "2026-09",
+      "published": "2026-09-22",
+      "change_yoy_percent": -8.4,
+      "source_id": "cian_rent_sep_2026",
+      "source_value": 45.6,
+      "source_unit": "thousand RUB/month",
+      "conversion": "multiply by 1000",
+      "locator": "Приложение, строка Санкт-Петербург, 1-комн.; web line 86",
+      "status": "verified_direct_original",
+      "matches_ui": true,
+      "verified_at": "2026-10-04"
+    },
+    {
+      "cityKey": "spb",
+      "city": "Санкт-Петербург",
+      "id": "rent2",
+      "value": 67200,
+      "unit": "RUB/month",
+      "period": "2026-09",
+      "published": "2026-09-22",
+      "change_yoy_percent": -9.9,
+      "source_id": "cian_rent_sep_2026",
+      "source_value": 67.2,
+      "source_unit": "thousand RUB/month",
+      "conversion": "multiply by 1000",
+      "locator": "Приложение, строка Санкт-Петербург, 2-комн.; web line 86",
+      "status": "verified_direct_original",
+      "matches_ui": true,
+      "verified_at": "2026-10-04"
+    },
+    {
+      "cityKey": "krd",
+      "city": "Краснодар",
+      "id": "rent1",
+      "value": 26300,
+      "unit": "RUB/month",
+      "period": "2026-09",
+      "published": "2026-09-22",
+      "change_yoy_percent": -1.1,
+      "source_id": "cian_rent_sep_2026",
+      "source_value": 26.3,
+      "source_unit": "thousand RUB/month",
+      "conversion": "multiply by 1000",
+      "locator": "Приложение, строка Краснодар, 1-комн.; web line 70",
+      "status": "verified_direct_original",
+      "matches_ui": true,
+      "verified_at": "2026-10-04"
+    },
+    {
+      "cityKey": "krd",
+      "city": "Краснодар",
+      "id": "rent2",
+      "value": 42400,
+      "unit": "RUB/month",
+      "period": "2026-09",
+      "published": "2026-09-22",
+      "change_yoy_percent": -1.9,
+      "source_id": "cian_rent_sep_2026",
+      "source_value": 42.4,
+      "source_unit": "thousand RUB/month",
+      "conversion": "multiply by 1000",
+      "locator": "Приложение, строка Краснодар, 2-комн.; web line 70",
+      "status": "verified_direct_original",
+      "matches_ui": true,
+      "verified_at": "2026-10-04"
+    },
+    {
+      "cityKey": "spb",
+      "city": "Санкт-Петербург",
+      "id": "sqm",
+      "value": 290800,
+      "unit": "RUB/sqm",
+      "period": "2026-09",
+      "published": "2026-09-28",
+      "change_yoy_percent": 18,
+      "source_id": "cian_sqm_sep_2026",
+      "source_value": 290.8,
+      "source_unit": "thousand RUB/sqm",
+      "conversion": "multiply by 1000",
+      "locator": "Приложение, строка Санкт-Петербург; web line 96",
+      "status": "verified_direct_original",
+      "matches_ui": true,
+      "verified_at": "2026-10-04"
+    },
+    {
+      "cityKey": "krd",
+      "city": "Краснодар",
+      "id": "sqm",
+      "value": 144700,
+      "unit": "RUB/sqm",
+      "period": "2026-09",
+      "published": "2026-09-28",
+      "change_yoy_percent": 0,
+      "source_id": "cian_sqm_sep_2026",
+      "source_value": 144.7,
+      "source_unit": "thousand RUB/sqm",
+      "conversion": "multiply by 1000",
+      "locator": "Приложение, строка Краснодар; web line 80",
+      "status": "verified_direct_original",
+      "matches_ui": true,
+      "verified_at": "2026-10-04"
+    },
+    {
+      "cityKey": "spb",
+      "city": "Санкт-Петербург",
+      "id": "sale1",
+      "value": 10500000,
+      "unit": "RUB",
+      "period": "2026-01",
+      "published": "2026-01-13",
+      "change_yoy_percent": null,
+      "source_id": "cian_sale1_jan_2026",
+      "source_value": 10.5,
+      "source_unit": "million RUB",
+      "conversion": "multiply by 1000000",
+      "locator": "Приложение, строка Санкт-Петербург, средняя стоимость 1-к; web line 80",
+      "status": "verified_direct_original_numeric_mean_period_secondary_market",
+      "matches_ui": true,
+      "offer_vs_transaction_semantics": "unverified",
+      "verified_at": "2026-10-04"
+    },
+    {
+      "cityKey": "krd",
+      "city": "Краснодар",
+      "id": "sale1",
+      "value": 5500000,
+      "unit": "RUB",
+      "period": "2026-01",
+      "published": "2026-01-13",
+      "change_yoy_percent": null,
+      "source_id": "cian_sale1_jan_2026",
+      "source_value": 5.5,
+      "source_unit": "million RUB",
+      "conversion": "multiply by 1000000",
+      "locator": "Приложение, строка Краснодар, средняя стоимость 1-к; web line 65",
+      "status": "verified_direct_original_numeric_mean_period_secondary_market",
+      "matches_ui": true,
+      "offer_vs_transaction_semantics": "unverified",
+      "verified_at": "2026-10-04"
+    }
+  ],
+  "discrepancies": [
+    {
+      "type": "source_unit_typographical_inconsistency",
+      "source_id": "cian_sqm_sep_2026",
+      "detail": "The table describes average price of one square metre but its second header line adds a monthly suffix. The article and square-metre metric identify a capital offer price per square metre, not a recurring monthly payment. Preserve RUB/sqm; do not treat it as RUB/sqm/month."
+    },
+    {
+      "type": "semantics_not_explicit_on_source",
+      "source_id": "cian_sale1_jan_2026",
+      "affected_records": [
+        "spb.sale1",
+        "krd.sale1"
+      ],
+      "detail": "Average price, 1-room type, secondary market, January period and values are directly confirmed. Listing-vs-transaction origin of this price input is not explicitly documented on this source page. Do not assert that either origin was directly verified here."
+    },
+    {
+      "type": "source_date_vs_period_key",
+      "affected_records": [
+        "spb.rent1",
+        "spb.rent2",
+        "krd.rent1",
+        "krd.rent2",
+        "spb.sqm",
+        "krd.sqm",
+        "spb.sale1",
+        "krd.sale1"
+      ],
+      "detail": "UI date keys use first day of the month. The primary pages only establish the month of the measurement and separately the publication day. Do not present the UI date key as the exact observation day or completion of a full calendar month.",
+      "resolution": "В рабочем наборе periodPrecision=month; поля точной даты замера нет. Даты публикации и проверки указаны отдельно."
+    }
+  ],
+  "release_note": "Числовые выписки сохранены без изменения. При подготовке фиксированного выпуска месячные ключи отделены от точных дат; неопределённый тип январской стоимости и ошибка единицы м² раскрыты в интерфейсе."
+}
