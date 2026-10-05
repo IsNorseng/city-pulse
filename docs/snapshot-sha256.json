@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-05",
-  "checkedAt": "2026-10-04",
+  "checkedAt": "2026-10-05",
   "algorithm": "SHA-256",
   "purpose": "Идентификация файлов фиксированного среза; контрольная сумма не подтверждает достоверность первоисточника.",
   "files": [
@@ -22,7 +22,19 @@
     },
     {
       "path": "docs/data-audit.md",
-      "sha256": "dd8e70be273f385892cdf839a53ac18d2d016ecb9a4681a41ff3d82e5ed5b036"
+      "sha256": "65f9e4b34d4c8f462e070ab4c1a0f06125cab0bfd0bdbf813bc52d27ef3e6e10"
+    },
+    {
+      "path": "data/verified-averages.json",
+      "sha256": "7faab21265c8472b53cd39bf19004e7c94538bc9dee82db602acd7d5d402cd78"
+    },
+    {
+      "path": "data/evidence/official-average-audit.json",
+      "sha256": "adf56ca596dd597854667a7993486e4fb6dbaa66ce0153a21e7ba2735518c488"
     }
-  ]
+  ],
+  "verificationDates": {
+    "housing": "2026-10-04",
+    "officialReferences": "2026-10-05"
+  }
 }
