@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-10-05",
+  "checkedAt": "2026-10-04",
+  "algorithm": "SHA-256",
+  "purpose": "Идентификация файлов фиксированного среза; контрольная сумма не подтверждает достоверность первоисточника.",
+  "files": [
+    {
+      "path": "data/verified-observations.json",
+      "sha256": "c3049eb4df50cdb9f5e7766a39f7bf27082de1e42deafa58cd6c9b497f801afd"
+    },
+    {
+      "path": "data/evidence/cian-direct-audit.json",
+      "sha256": "7bec6e69d0210c013ba772bc974a87076f6f53947a4455fb392994675f2f4105"
+    },
+    {
+      "path": "data/evidence/ndfl-rules.json",
+      "sha256": "6048a51e5e2e2166f02f3e801e7be8078a534146598a8a50462ae14b348acc2a"
+    },
+    {
+      "path": "docs/excluded-sources.json",
+      "sha256": "aeb5eefc956cb8be49465d233e8b0a9794ff18488fa2b9f1c8045a4ba2ad8db2"
+    },
+    {
+      "path": "docs/data-audit.md",
+      "sha256": "dd8e70be273f385892cdf839a53ac18d2d016ecb9a4681a41ff3d82e5ed5b036"
+    }
+  ]
+}
