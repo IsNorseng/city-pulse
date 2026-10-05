@@ -1,0 +1,14 @@
+node_modules/
+dist/
+local-output/
+.sites-runtime/
+.env*
+*.tsbuildinfo
+*.duckdb
+*.duckdb.wal
+__pycache__/
+.venv/
+.DS_Store
+
+.build/
+public/local.html
