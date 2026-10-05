@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-04",
+  "reason": "Первичный официальный документ не удалось открыть непосредственно. Это не доказательство ошибки числа, но достаточного подтверждения для UI нет.",
+  "sources": [
+    {
+      "id": "spb_wage_september_2025",
+      "url": "https://78.rosstat.gov.ru/storage/mediabank/ZR092540_%28%D1%84%D0%B0%D0%B9%D0%BB%20%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%29.pdf",
+      "reason": "502 Bad Gateway"
+    },
+    {
+      "id": "spb_wage_series_2025_q3",
+      "url": "https://78.rosstat.gov.ru/storage/mediabank/op3kv2025.pdf",
+      "reason": "web.open: 502 Bad Gateway; Invoke-WebRequest: The SSL connection could not be established / Authentication failed."
+    },
+    {
+      "id": "spb_basket_december_2025",
+      "url": "https://78.rosstat.gov.ru/storage/mediabank/11000326.pdf",
+      "reason": "502 Bad Gateway"
+    },
+    {
+      "id": "spb_population_january_2025",
+      "url": "https://78.rosstat.gov.ru/storage/mediabank/11000825_022025.pdf",
+      "reason": "502 Bad Gateway"
+    },
+    {
+      "id": "krd_basket_august_2025",
+      "url": "https://23.rosstat.gov.ru/storage/2025/10-03/oblbWD7C/docl_08_2025.pdf",
+      "reason": "502 Bad Gateway"
+    },
+    {
+      "id": "krd_city_population_january_2025",
+      "url": "https://23.rosstat.gov.ru/storage/2019/01-14/zLsnTebq/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BA%D1%80%D0%B0%D0%B9%20%D0%B2%20%D1%86%D0%B8%D1%84%D1%80%D0%B0%D1%85%202024.pdf",
+      "reason": "502 Bad Gateway"
+    }
+  ]
+}
