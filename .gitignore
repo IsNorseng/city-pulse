@@ -12,3 +12,5 @@ __pycache__/
 
 .build/
 public/local.html
+public/methodology.html
+public/verified-data.csv
