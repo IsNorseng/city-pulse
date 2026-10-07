@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
+import {verifyProfile} from './verify-profile.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const read = name => JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
@@ -169,6 +170,7 @@ assert.equal(officialSeen.size,3,'Frozen official set contains exactly three acc
 const averageLoader = fs.readFileSync(path.join(root,'lib/average-data.ts'),'utf8');
 assert(averageLoader.includes('verified-averages.json'),'Official cards must use the accepted average dataset');
 
+verifyProfile();
 console.log(`Verified dataset: ${seen.size} observations match direct primary table evidence.`);
 console.log(`Verified official references: ${officialSeen.size} observations match direct official evidence.`);
 console.log('This checks saved evidence consistency; it does not refetch the sources or certify freshness.');
