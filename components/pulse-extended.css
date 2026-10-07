@@ -1,0 +1,53 @@
+.profile-overview { margin-bottom: 28px; }
+.profile-overview > .section-heading { margin-bottom: 16px; }
+.profile-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.profile-grid-overview { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.profile-card { min-width: 0; padding: 22px; background: #fff; border: 1px solid #e2e7ef; border-radius: 8px; }
+.profile-card h3 { color: #17263b; font-size: 17px; line-height: 1.45; overflow-wrap: anywhere; }
+.profile-number { margin: 15px 0 10px; color: #17263b; font-size: 31px; font-weight: 600; letter-spacing: -0.8px; line-height: 1.25; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.profile-number span { display: block; margin-top: 6px; color: #65758a; font-size: 13px; font-weight: 400; letter-spacing: 0; line-height: 1.5; }
+.profile-period { color: #263d61; font-size: 13px; font-weight: 600; }
+.profile-geography { margin-top: 3px; color: #65758a; font-size: 13px; }
+.profile-description { margin-top: 12px; color: #52647e; font-size: 14px; line-height: 1.65; overflow-wrap: anywhere; }
+.profile-scope { margin-top: 10px; color: #65758a; font-size: 13px; line-height: 1.65; overflow-wrap: anywhere; }
+.profile-basis { margin-top: 7px; color: #52647e; font-size: 12px; line-height: 1.6; }
+.profile-region-badge { display: block; width: fit-content; max-width: 100%; margin-bottom: 12px; padding: 5px 9px; background: #edf0ff; border: 1px solid #d9e1fb; border-radius: 5px; color: #354fd2; font-size: 12px; line-height: 1.55; font-weight: 500; }
+.profile-source-link { display: inline-block; margin-top: 14px; color: #354fd2; font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 3px; }
+.profile-source-link:hover { color: #2137a8; }
+.profile-source-details { margin-top: 12px; font-size: 12px; color: #65758a; line-height: 1.65; }
+.profile-source-details summary { cursor: pointer; color: #52647e; width: fit-content; }
+.profile-source-details summary:focus-visible { outline: 3px solid #93a5fa; outline-offset: 3px; }
+.profile-source-details dl { display: grid; gap: 8px; margin: 10px 0 0; }
+.profile-source-details dl > div { display: grid; grid-template-columns: 85px minmax(0, 1fr); gap: 10px; }
+.profile-source-details dt { color: #52647e; font-weight: 500; }
+.profile-source-details dd { margin: 0; overflow-wrap: anywhere; }
+.profile-section-intro { margin: 0 0 20px; color: #52647e; font-size: 14px; line-height: 1.7; }
+.profile-method-note { margin-top: 12px; padding: 10px 12px; color: #526692; background: #f1f4fc; border-radius: 5px; font-size: 13px; line-height: 1.65; }
+.profile-sections { display: grid; gap: 24px; }
+.profile-sections > .panel { margin: 0; }
+.profile-age-groups { margin-top: 26px; }
+.profile-age-groups h3 { margin-bottom: 12px; }
+.profile-table-scroll { width: 100%; overflow-x: auto; }
+.profile-table { width: 100%; border-collapse: collapse; font-size: 13px; color: #52647e; text-align: left; }
+.profile-table th, .profile-table td { padding: 14px 12px; border-bottom: 1px solid #e2e7ef; vertical-align: top; overflow-wrap: anywhere; }
+.profile-table thead th { color: #65758a; font-size: 12px; font-weight: 500; background: #f7f9fc; }
+.profile-table tbody th { color: #263d61; font-weight: 500; }
+.profile-table .profile-source-link { margin-top: 0; }
+.profile-table .profile-region-badge { margin-bottom: 7px; }
+.profile-table-secondary { display: block; margin-top: 5px; color: #65758a; font-size: 12px; font-weight: 400; line-height: 1.6; }
+.profile-sources { margin-top: 28px; }
+.profile-sources > h2 { font-size: 19px; margin-bottom: 10px; }
+.profile-sources-table { min-width: 570px; }
+.profile-sources-table th:first-child { width: 23%; }
+.profile-sources-table td:nth-child(2) { width: 25%; }
+.profile-sources-table .profile-description, .profile-sources-table .profile-scope { font-size: 12px; margin-top: 8px; }
+@media (max-width: 1150px) { .profile-grid-overview { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) {
+  .profile-grid, .profile-grid-overview { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .profile-card { padding: 18px; }
+  .profile-number { font-size: 29px; }
+  .profile-sections { gap: 18px; }
+  .profile-table th, .profile-table td { padding: 12px 9px; }
+  .profile-age-groups .profile-table { min-width: 560px; }
+  .profile-source-details dl > div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+}
