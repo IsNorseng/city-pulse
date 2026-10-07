@@ -46,7 +46,7 @@ export function ExtendedFactCard({fact,compact=false}: {fact: ExtendedFact;compa
     <p className="profile-period">{fact.period}</p>
     <p className="profile-geography">{fact.geo}</p>
     {!compact&&<p className="profile-description">{fact.description}</p>}
-    {fact.id === 'actualModalInterval' && <p className="profile-method-note">Интервал с наибольшей плотностью в опубликованном распределении. По сгруппированным данным точную моду не определяли.</p>}
+    {fact.id === 'actualModalInterval' && <p className="profile-method-note">Наибольшая плотность среди групп с известными границами. Открытые группы не сравнивались; точная наиболее частая зарплата по этим данным не определяется.</p>}
     {!compact&&<p className="profile-scope">{fact.scope}</p>}
     <a className="profile-source-link" href={fact.url} target="_blank" rel="noreferrer">Источник: {fact.source} ↗</a>
     <SourceDetails fact={fact} compact={compact}/>
