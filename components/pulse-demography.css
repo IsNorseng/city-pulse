@@ -1,0 +1,58 @@
+.demography-heading h2{margin:5px 0 10px}
+.demography-period{font-size:14px;color:#52647b;line-height:1.5}
+.demography-controls{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin:22px 0}
+.demography-selector{display:flex;flex-direction:column;gap:6px;max-width:100%;font-size:14px;color:#52647b}
+.demography-selector select{max-width:100%;border:1px solid #d6dfeb;border-radius:7px;padding:9px 12px;background:white;color:#17263b;font-size:14px}
+.demography-units{display:flex;flex-wrap:wrap;gap:4px;padding:4px;border-radius:8px;background:#edf1f7}
+.demography-units button{padding:7px 12px;border:0;border-radius:5px;background:transparent;color:#566b84;font-size:14px}
+.demography-units button[aria-pressed="true"]{background:white;color:#243faf;box-shadow:0 1px 3px #1b315617}
+.demography-totals{display:flex;flex-wrap:wrap;gap:12px 24px;margin-bottom:20px;font-size:13px;color:#63768e}
+.demography-totals strong{margin-left:5px;color:#24364f;font-weight:600;white-space:nowrap}
+.demography-figure{margin:0}
+.demography-legend,.demography-row,.demography-axis{display:grid;grid-template-columns:minmax(0,1fr) 48px minmax(0,1fr);gap:8px}
+.demography-legend{padding:0 12px;margin-bottom:12px;align-items:center;font-size:14px;color:#52647b}
+.demography-legend>span{display:flex;align-items:center;gap:7px}
+.demography-legend>span:nth-child(2){justify-content:center;font-size:12px}
+.demography-legend>span:last-child{justify-content:flex-end}
+.demography-legend i{width:10px;height:10px;border-radius:2px;flex-shrink:0}
+.demography-male-key,.demography-male-bar{background:#3c59c8}
+.demography-female-key,.demography-female-bar{background:#a65d88}
+.demography-chart{border:1px solid #e1e7f0;border-radius:8px;background:#f8faff;padding:12px}
+.demography-row{align-items:center;height:27px}
+.demography-age{text-align:center;font-size:12px;color:#5b6d85;white-space:nowrap}
+.demography-side{display:flex;align-items:center;width:100%;height:22px;border-bottom:1px solid #e8edf5}
+.demography-male-side{justify-content:flex-end;border-right:1px solid #cdd7e5}
+.demography-female-side{justify-content:flex-start;border-left:1px solid #cdd7e5}
+.demography-bar{display:block;height:17px}
+.demography-male-bar{border-radius:3px 0 0 3px}
+.demography-female-bar{border-radius:0 3px 3px 0}
+.demography-axis{margin-top:9px;font-size:11px;color:#65778e}
+.demography-axis>div{display:flex;justify-content:space-between;gap:4px;white-space:nowrap}
+.demography-figure figcaption{margin-top:14px;font-size:13px;line-height:1.6;color:#64758d}
+.demography-source{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:18px 0;font-size:13px;color:#62758b}
+.demography-source a{color:#3a52d5;text-decoration:underline;text-underline-offset:3px}
+.demography-details{border-top:1px solid #e2e8f0;padding-top:14px;color:#5c6f87;font-size:14px}
+.demography-details summary{cursor:pointer;color:#344daa;font-weight:600}
+.demography-details p{margin:12px 0;font-size:13px;line-height:1.6}
+.demography-table-wrap{overflow-x:auto;max-width:100%;margin-top:18px}
+.demography-details table{width:100%;border-collapse:collapse;font-size:12px}
+.demography-details caption{text-align:left;margin-bottom:12px;color:#3f536d;font-weight:600}
+.demography-details th,.demography-details td{padding:9px 10px;border-bottom:1px solid #e3e9f2;text-align:right;vertical-align:top;white-space:nowrap}
+.demography-details th:first-child,.demography-details td:last-child{ text-align:left}
+.demography-details td:last-child{white-space:normal;min-width:220px;line-height:1.5}
+.demography-details thead th{color:#516781;font-weight:600}
+.demography-details tfoot th,.demography-details tfoot td{font-weight:600;color:#344960;border-top:2px solid #d6dfeb}
+@media(max-width:640px){
+  .demography-controls{align-items:stretch;flex-direction:column;gap:12px;margin:18px 0}
+  .demography-selector select{width:100%;font-size:13px;padding:10px 8px}
+  .demography-units{align-self:flex-start}
+  .demography-totals{gap:8px 14px;font-size:12px}
+  .demography-legend,.demography-row,.demography-axis{grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr);gap:5px}
+  .demography-legend{padding:0 5px;font-size:12px}
+  .demography-legend>span{gap:5px}
+  .demography-legend>span:nth-child(2){font-size:10px}
+  .demography-chart{padding:10px 5px}
+  .demography-age{font-size:11px}
+  .demography-axis{font-size:9px}
+  .demography-axis>div{gap:2px}
+}
