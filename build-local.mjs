@@ -1,5 +1,7 @@
 import fs from 'node:fs';import path from 'node:path';import {build} from 'vite';import react from '@vitejs/plugin-react';
 const root=process.cwd(),out=process.env.PULSE_OUTPUT_DIR?path.resolve(process.env.PULSE_OUTPUT_DIR):path.join(root,'local-output'),local=path.join(root,'.build/offline');fs.mkdirSync(out,{recursive:true});
+await import('./scripts/build-methodology.mjs');
+for(const name of ['methodology.html','verified-data.csv'])fs.copyFileSync(path.join(root,'docs',name),path.join(out,name));
 await build({configFile:false,root,plugins:[react()],resolve:{alias:{'@':root}},define:{'process.env.NODE_ENV':'"production"'},build:{outDir:local,emptyOutDir:true,lib:{entry:path.join(root,'local-entry.tsx'),name:'CityPulse',formats:['iife'],fileName:'pulse'},cssCodeSplit:false,minify:true}});
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):path.join(dir,e.name));}
 const files=walk(local),css=files.filter(f=>f.endsWith('.css')).map(f=>fs.readFileSync(f,'utf8')).join('\n'),js=files.filter(f=>f.endsWith('.js')).map(f=>fs.readFileSync(f,'utf8')).join('\n');if(!css||!js)throw new Error('Bundle incomplete');
