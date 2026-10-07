@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-05",
-  "checkedAt": "2026-10-05",
+  "generatedAt": "2026-10-07",
+  "checkedAt": "2026-10-07",
   "algorithm": "SHA-256",
   "purpose": "Идентификация файлов фиксированного среза; контрольная сумма не подтверждает достоверность первоисточника.",
   "files": [
@@ -18,11 +18,11 @@
     },
     {
       "path": "docs/excluded-sources.json",
-      "sha256": "aeb5eefc956cb8be49465d233e8b0a9794ff18488fa2b9f1c8045a4ba2ad8db2"
+      "sha256": "69af1f331c7b19aa164ddf2acfe13aec2298c91340bad2fbc0d323f857bb8d36"
     },
     {
       "path": "docs/data-audit.md",
-      "sha256": "65f9e4b34d4c8f462e070ab4c1a0f06125cab0bfd0bdbf813bc52d27ef3e6e10"
+      "sha256": "81f050c08296a05858e8debd3522c011f07d913df158761e9ce62d229c2a498f"
     },
     {
       "path": "data/verified-averages.json",
@@ -31,10 +31,28 @@
     {
       "path": "data/evidence/official-average-audit.json",
       "sha256": "adf56ca596dd597854667a7993486e4fb6dbaa66ce0153a21e7ba2735518c488"
+    },
+    {
+      "path": "data/verified-city-profile.json",
+      "sha256": "2f7b04e52539f056ca8e5bfd24df4b2c88b831718814b75eb6fda952a716e43f"
+    },
+    {
+      "path": "data/demography-age-sex.json",
+      "sha256": "9e04e056fe1a69fab6772b69c1db138a72ddda97aa8bb3da4d729603314cae79"
+    },
+    {
+      "path": "data/evidence/city-profile-audit.json",
+      "sha256": "81d1580a3f2e82b72d70510d9551546a8c24f1d49cbff7be4ab1bf25f9fb0c52"
+    },
+    {
+      "path": "data/evidence/hh-cities-snapshot.json",
+      "sha256": "5c58d20870c14919d0459fbd67f058dd8d7174b6f3ddfaeb277b098db8a17016"
     }
   ],
   "verificationDates": {
     "housing": "2026-10-04",
-    "officialReferences": "2026-10-05"
+    "averageReferences": "2026-10-05",
+    "hhAndDemography": "2026-10-06",
+    "salaryDistribution": "2026-10-07"
   }
 }
