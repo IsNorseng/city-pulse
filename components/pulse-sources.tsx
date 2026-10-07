@@ -24,6 +24,7 @@ function changeDescription(change: number | null) {
 
 export function SourceContent() {
   return <div className="sheet-body">
+    <p><a href="methodology.html" target="_blank" rel="noreferrer">Как читать данные и проверить числа — понятная методика и таблицы ↗</a></p>
     <Tabs defaultValue="sources">
       <TabsList className="source-tabs">
         <TabsTrigger value="sources">Источники</TabsTrigger>
