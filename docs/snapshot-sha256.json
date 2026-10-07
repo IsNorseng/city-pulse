@@ -22,7 +22,7 @@
     },
     {
       "path": "docs/data-audit.md",
-      "sha256": "81f050c08296a05858e8debd3522c011f07d913df158761e9ce62d229c2a498f"
+      "sha256": "7be473d5783aa27164a0af2418a4805e2bf14b3b01234a85c626533e9a5914dc"
     },
     {
       "path": "data/verified-averages.json",
@@ -47,6 +47,14 @@
     {
       "path": "data/evidence/hh-cities-snapshot.json",
       "sha256": "5c58d20870c14919d0459fbd67f058dd8d7174b6f3ddfaeb277b098db8a17016"
+    },
+    {
+      "path": "docs/methodology.html",
+      "sha256": "a85dbf4bebd5ea46edef271bf92c0262ff9381cdb2ead8f276a1c78710de6891"
+    },
+    {
+      "path": "docs/verified-data.csv",
+      "sha256": "30ecc5b3240b8d0f83b3e5a9b44d27e46ae754e9cfca8d069309eacd8d83073d"
     }
   ],
   "verificationDates": {
