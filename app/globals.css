@@ -1,6 +1,8 @@
 @import "tailwindcss" source(none);
 @import "tw-animate-css";
 @import "../vendor/shadcn-tailwind-4.13.0.css";
+@import "../components/pulse-extended.css";
+@import "../components/pulse-demography.css";
 @source "./";
 @source "../components";
 :root{--background:#fff;--foreground:#17263b;--card:#fff;--card-foreground:#17263b;--popover:#fff;--popover-foreground:#17263b;--primary:#3a52d5;--primary-foreground:#fff;--secondary:#edf1f8;--secondary-foreground:#17263b;--muted:#f1f4f8;--muted-foreground:#667489;--accent:#e9edff;--accent-foreground:#304acb;--destructive:#9d3f32;--border:#e2e7ef;--input:#d8dfe9;--ring:#526af0;--radius:.65rem;--sidebar:#f7f9fc;--sidebar-foreground:#17263b;--font-sans:Arial,Helvetica,sans-serif}
@@ -17,3 +19,5 @@
 .data-meta .source-link{margin:0;font-size:12px}.data-meta .source-link:hover{text-decoration:underline}
 
 .average-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:24px}.average-card{min-width:0;padding:20px;background:#f7f9fc;border:1px solid #e2e7ef;border-radius:8px}.average-card h3{font-size:17px}.average-card .hero-number{margin:15px 0 10px;font-size:34px}.average-card .hero-number span{white-space:nowrap}.average-note{color:#6a7a91;font-size:13px;line-height:1.65;margin-top:8px}.average-card .section-copy{margin:12px 0}.average-card .source-link{margin:12px 0 0;font-size:13px}.average-card .outline-button{margin-top:18px;white-space:normal;text-align:left}.average-change{font-size:13px;color:#3855d3;margin-top:8px}.average-section>.average-note{margin-top:18px}.housing-overview{margin-bottom:14px}.budget-panel{scroll-margin-top:108px}.budget-preset{margin-top:18px;padding:14px 16px;background:#edf2ff;border:1px solid #dae3fb;border-radius:7px;font-size:14px;line-height:1.65;color:#526692}@media(max-width:640px){.average-grid{grid-template-columns:1fr;gap:14px}.average-card{padding:16px}.average-card .hero-number{font-size:30px}.average-card .hero-number span{display:inline-block;margin-left:7px;font-size:13px}.budget-panel{scroll-margin-top:200px}}
+
+.side-nav{height:auto!important;gap:5px!important}.sidebar{overflow-y:auto}.overview-housing{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:640px){.side-nav{height:48px!important}.sidebar{overflow-x:auto;overflow-y:hidden}}
