@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-29",
+  "rankings": [
+    {
+      "id": "raex-100-2026",
+      "name": "RAEX-100 — лучшие вузы России",
+      "edition": 2026,
+      "scope": "Россия · общероссийское место",
+      "sourceURL": "https://raex-rr.com/education/russian_universities/top-100_universities/2026/",
+      "methodologyURL": "https://raex-rr.com/education/russian_universities/top-100_universities/2026/methods/",
+      "limitation": "Рейтинг головных организаций: филиалы, творческие, спортивные и силовые вузы исключены. Условия образования — 50%, востребованность выпускников — 30%, наука — 20%. Место относится к университету в целом, а не к каждой программе; выборка ниже не является полным списком вузов города. Ранги разных рейтингов не сопоставляются."
+    },
+    {
+      "id": "three-missions-global-2025",
+      "name": "Три миссии университета — глобальный рейтинг",
+      "edition": 2025,
+      "scope": "Мир · диапазон глобальных мест",
+      "sourceURL": "https://raex-rr.com/education/international_universities/three_missions_Russia/2025/",
+      "methodologyURL": "https://raex-rr.com/education/international_universities/three_missions_Russia/2025/methods/",
+      "limitation": "Используется столбец глобального места, а не соседний российский срез. Диапазон 1751–2000 не означает точное место: внутри группы вузы перечислены по алфавиту. Выпуск 2025 года сохранён как отдельный срез и не объявляется самым свежим. Рейтинг не оценивает качество каждой образовательной программы; его позиции не сопоставимы с RAEX-100 и локальным рейтингом."
+    },
+    {
+      "id": "raex-local-yufo-2026",
+      "name": "RAEX — локальный рейтинг вузов ЮФО",
+      "edition": 2026,
+      "scope": "Южный федеральный округ · место среди участников локального рейтинга",
+      "sourceURL": "https://raex-rr.com/education/local_university_rating/local_university_rating_YUFO/2026/",
+      "methodologyURL": "https://raex-rr.com/education/local_university_rating/local_university_rating_YUFO/2026/methods/",
+      "limitation": "Отдельная выборка региональных вузов без филиалов. Из неё исключены участники RAEX-100 или Трёх миссий за 2024–2025 годы и учреждения с особой спецификой. Образование — 45%, наука — 25%, общество — 30%. Это место в локальном списке, а не по всей России и не среди всех вузов ЮФО; общей сортировки с другими рейтингами нет."
+    }
+  ],
+  "universities": [
+    { "cityKey": "spb", "id": "spbu", "name": "Санкт-Петербургский государственный университет", "rankingId": "raex-100-2026", "rank": 4, "rankRange": null },
+    { "cityKey": "spb", "id": "spbstu", "name": "Санкт-Петербургский политехнический университет Петра Великого", "rankingId": "raex-100-2026", "rank": 9, "rankRange": null },
+    { "cityKey": "spb", "id": "itmo", "name": "Университет ИТМО", "rankingId": "raex-100-2026", "rank": 15, "rankRange": null },
+    { "cityKey": "spb", "id": "spmi", "name": "Санкт-Петербургский горный университет императрицы Екатерины II", "rankingId": "raex-100-2026", "rank": 28, "rankRange": null },
+    { "cityKey": "spb", "id": "pavlov", "name": "Первый Санкт-Петербургский государственный медицинский университет имени академика И. П. Павлова", "rankingId": "raex-100-2026", "rank": 29, "rankRange": null },
+    { "cityKey": "spb", "id": "leti", "name": "Санкт-Петербургский государственный электротехнический университет «ЛЭТИ» имени В. И. Ульянова (Ленина)", "rankingId": "raex-100-2026", "rank": 34, "rankRange": null },
+    { "cityKey": "spb", "id": "herzen", "name": "Российский государственный педагогический университет имени А. И. Герцена", "rankingId": "raex-100-2026", "rank": 41, "rankRange": null },
+    { "cityKey": "spb", "id": "unecon", "name": "Санкт-Петербургский государственный экономический университет", "rankingId": "raex-100-2026", "rank": 46, "rankRange": null },
+    { "cityKey": "spb", "id": "gpmu", "name": "Санкт-Петербургский государственный педиатрический медицинский университет", "rankingId": "raex-100-2026", "rank": 49, "rankRange": null },
+    { "cityKey": "spb", "id": "almazov", "name": "Национальный медицинский исследовательский центр имени В. А. Алмазова", "rankingId": "raex-100-2026", "rank": 55, "rankRange": null },
+    { "cityKey": "krd", "id": "kubsau", "name": "Кубанский государственный аграрный университет имени И. Т. Трубилина", "rankingId": "raex-100-2026", "rank": 66, "rankRange": null },
+    { "cityKey": "krd", "id": "kubgmu", "name": "Кубанский государственный медицинский университет", "rankingId": "raex-100-2026", "rank": 89, "rankRange": null },
+    { "cityKey": "krd", "id": "kubsu", "name": "Кубанский государственный университет", "rankingId": "three-missions-global-2025", "rank": null, "rankRange": [1751, 2000] },
+    { "cityKey": "krd", "id": "kubstu", "name": "Кубанский государственный технологический университет", "rankingId": "three-missions-global-2025", "rank": null, "rankRange": [1751, 2000] },
+    { "cityKey": "krd", "id": "imsit", "name": "Академия маркетинга и социально-информационных технологий — ИМСИТ", "rankingId": "raex-local-yufo-2026", "rank": 14, "rankRange": null },
+    { "cityKey": "krd", "id": "kmi", "name": "Кубанский медицинский институт", "rankingId": "raex-local-yufo-2026", "rank": 16, "rankRange": null }
+  ]
+}
