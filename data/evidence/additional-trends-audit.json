@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "assembledAt": "2026-10-29",
+  "scope": "Supplementary changes from saved verified observations; no fresh source retrieval and no composite standard-of-living score.",
+  "existingVerificationDates": {
+    "housing": "2026-10-04",
+    "averageReferences": "2026-10-05",
+    "hhAndDemography": "2026-10-06"
+  },
+  "hh": {
+    "archive": "data/evidence/hh-cities-snapshot.json",
+    "sourceURL": "https://stats.hh.ru/api/v1/data/RU",
+    "sourceRetrievedAt": "2026-10-06T13:53:12.474Z",
+    "sourceSha256": "e0227e95d1cd206267ffd619db1c9352d0ba4947b7fd3ee83b3f250ce79a87fe",
+    "excerpt": "data/additional-hh-trends.json",
+    "excerptRecheckedAt": "2026-10-29",
+    "selection": "City IDs2/53, all-profession series, month index8, header2025/2026. Raw numeric strings retained; no new percentage changes.",
+    "checks": [
+      "source metadata agrees with saved archive",
+      "city area ID and name",
+      "year header and month index",
+      "previous/current raw strings match exact archive cells",
+      "finite non-negative values",
+      "only hhindex and averageCompensation mapped to the approved indicator IDs"
+    ],
+    "limitation": "Platform HH only. Resumes are not people; the index is not unemployment. Offered salary is a publisher median, not actual pay, and tax basis is unspecified."
+  },
+  "rows": [
+    {
+      "cityKey": "spb",
+      "id": "salary",
+      "file": "data/verified-averages.json",
+      "evidenceId": "spb_official_2025",
+      "locator": "PDF page33",
+      "comparison": "January-November2025 to January-November2024",
+      "changeOrigin": "published source +12.3%, nominal gross mean; not real or median income"
+    },
+    {
+      "cityKey": "spb",
+      "id": "populationChange",
+      "file": "data/verified-city-profile.json",
+      "evidenceId": "pop_components",
+      "locator": "Sheet Всего, C41; components D41/E41",
+      "comparison": "2024 calendar-year change",
+      "changeOrigin": "published official change"
+    },
+    {
+      "cityKey": "krd",
+      "id": "populationCityChange",
+      "file": "data/verified-city-profile.json",
+      "evidenceId": "municipal2025",
+      "locator": "2025 Численность_по_МО C7025; 2024 C7128",
+      "comparison": "published estimates on01.01.2024 and01.01.2025",
+      "changeOrigin": "existing derived difference of published settlement estimates; not migration or natural increase; boundary/revision effects not separated"
+    },
+    {
+      "cityKey": "spb/krd",
+      "id": "rent1",
+      "file": "data/verified-observations.json",
+      "evidenceId": "cian_rent_sep_2026",
+      "comparison": "September2026 snapshot to source previous-year comparison",
+      "changeOrigin": "published source year-on-year percent, mean asking rent excluding elite segment"
+    }
+  ],
+  "interpretationLimit": "A city may show different directions across these metrics. Population growth, nominal wages and HH competition do not individually establish an improvement or deterioration in living standards."
+}
