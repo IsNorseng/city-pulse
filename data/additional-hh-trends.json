@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "updatePolicy": "frozen",
+  "assembledAt": "2026-10-29",
+  "source": {
+    "name": "HH Статистика / HeadHunter",
+    "url": "https://stats.hh.ru/api/v1/data/RU",
+    "retrievedAt": "2026-10-06T13:53:12.474Z",
+    "sourceSha256": "e0227e95d1cd206267ffd619db1c9352d0ba4947b7fd3ee83b3f250ce79a87fe",
+    "archive": "data/evidence/hh-cities-snapshot.json"
+  },
+  "previousPeriod": "2025-09",
+  "currentPeriod": "2026-09",
+  "records": [
+    {
+      "cityKey": "spb",
+      "areaId": "2",
+      "id": "hhIndex",
+      "metric": "hhindex",
+      "monthIndex": 8,
+      "header": [
+        "",
+        "2025",
+        "2026"
+      ],
+      "previousRaw": "7.4",
+      "currentRaw": "10.3"
+    },
+    {
+      "cityKey": "spb",
+      "areaId": "2",
+      "id": "offeredMedian",
+      "metric": "averageCompensation",
+      "monthIndex": 8,
+      "header": [
+        "",
+        "2025",
+        "2026"
+      ],
+      "previousRaw": "87690.2608",
+      "currentRaw": "94114.20009"
+    },
+    {
+      "cityKey": "krd",
+      "areaId": "53",
+      "id": "hhIndex",
+      "metric": "hhindex",
+      "monthIndex": 8,
+      "header": [
+        "",
+        "2025",
+        "2026"
+      ],
+      "previousRaw": "8.7",
+      "currentRaw": "13.1"
+    },
+    {
+      "cityKey": "krd",
+      "areaId": "53",
+      "id": "offeredMedian",
+      "metric": "averageCompensation",
+      "monthIndex": 8,
+      "header": [
+        "",
+        "2025",
+        "2026"
+      ],
+      "previousRaw": "77930.16003",
+      "currentRaw": "85680.14369"
+    }
+  ]
+}
