@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-07",
-  "checkedAt": "2026-10-07",
+  "generatedAt": "2026-11-01",
+  "checkedAt": "2026-11-01",
   "algorithm": "SHA-256",
   "purpose": "Идентификация файлов фиксированного среза; контрольная сумма не подтверждает достоверность первоисточника.",
   "files": [
@@ -50,17 +50,133 @@
     },
     {
       "path": "docs/methodology.html",
-      "sha256": "a85dbf4bebd5ea46edef271bf92c0262ff9381cdb2ead8f276a1c78710de6891"
+      "sha256": "e1130f0ccef4e9512c0fd0fa37e21078db5931ef1355a7e972627916c79e1e8f"
     },
     {
       "path": "docs/verified-data.csv",
-      "sha256": "30ecc5b3240b8d0f83b3e5a9b44d27e46ae754e9cfca8d069309eacd8d83073d"
+      "sha256": "f6542a8b1f53a48c12c998efd637129ea04e70f1240411ed205d40c397e38252"
+    },
+    {
+      "path": "data/sector-wages.json",
+      "sha256": "754e930ab3bb8ce7a7a87a15f4a7a5d5f2ea5e506c33cd023bf4ebfb93e542c7"
+    },
+    {
+      "path": "data/evidence/sector-wages-source.json",
+      "sha256": "089b37af82b6734f3c0212246def7697b04ba76b8c4311afc6d8cb605eb42fbc"
+    },
+    {
+      "path": "docs/sector-wages.json",
+      "sha256": "754e930ab3bb8ce7a7a87a15f4a7a5d5f2ea5e506c33cd023bf4ebfb93e542c7"
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "e92ed8f477a1083c35eea64ca5ac87f401bd19fd567b11f4e81199d26b7139e5"
+    },
+    {
+      "path": "data/portrait-media.json",
+      "sha256": "cc234b182bf4a1350ee187587e630e6b120f41f5529864ef8d4f1df4177b1a7e"
+    },
+    {
+      "path": "assets/photos/spb-neva.jpg",
+      "sha256": "a20d0184e1a51d814a18c2fd9ca36df45650df92bcb5b1694fac89dbf13dee58"
+    },
+    {
+      "path": "assets/photos/krd-park.jpg",
+      "sha256": "df7032fb47628d49700de6b3d7eb4f8bf0e37c3a57effe6d798f284af49e3ee7"
+    },
+    {
+      "path": "assets/fonts/prata-Prata-Regular.ttf",
+      "sha256": "3b2b880737be3bda5f03554297b758516876157c88f9e3b3bae8fa1fc96a2c2c"
+    },
+    {
+      "path": "assets/fonts/manrope-Manrope[wght].ttf",
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+    },
+    {
+      "path": "assets/fonts/prata-OFL.txt",
+      "sha256": "32764329c9543658d478cc1c045a15f050084592551ea02d96293cc7f09daff3"
+    },
+    {
+      "path": "assets/fonts/manrope-OFL.txt",
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "path": "docs/media-credits.html",
+      "sha256": "4e69df1163078c335791b7ff01652beac152eb9e899e59e0ea80ee1248795e4e"
+    },
+    {
+      "path": "docs/fonts-prata-license.txt",
+      "sha256": "32764329c9543658d478cc1c045a15f050084592551ea02d96293cc7f09daff3"
+    },
+    {
+      "path": "docs/fonts-manrope-license.txt",
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "path": "data/additional-context.json",
+      "sha256": "16fdc6afb139b8c5fb2cbf88fa29f3eed9c46cbfa58f541263d1d2a10f13d434"
+    },
+    {
+      "path": "data/additional-universities.json",
+      "sha256": "7bf6e539a968275ba7e815195f46a6016a68983d5cc074d49d7f135c6d7f99e4"
+    },
+    {
+      "path": "data/additional-hh-trends.json",
+      "sha256": "40a262ba4c46ead9bf2545cf4dfe2f89b31ace09dc6d1238133ab5667c6c81f2"
+    },
+    {
+      "path": "data/evidence/additional-yandex-audit.json",
+      "sha256": "69fecb73794412b087b2a802f3aff488249ff17416140c6a4f50fef1f1ec0bf4"
+    },
+    {
+      "path": "data/evidence/additional-universities-audit.json",
+      "sha256": "3deb79618578ffead32d6ee63962d400265647e75748106344b3ea6bd0aa4f8e"
+    },
+    {
+      "path": "data/evidence/additional-trends-audit.json",
+      "sha256": "152cefcfb32ad68eb24dd540de8b0d0bf545c3366c2a55e0b3474ab86ea67182"
+    },
+    {
+      "path": "docs/additional-context.html",
+      "sha256": "d7d97b3503d0f839e9624499fa726a62993ffce6836f1c2e4987e87d4b47e2c1"
+    },
+    {
+      "path": "docs/additional-data.json",
+      "sha256": "025b77fd67f4a1f678ac169fb127b5f2ffc522350498dd316767a800ac4820ec"
+    },
+    {
+      "path": "data/evidence/additional-traffic-audit.json",
+      "sha256": "196334f49bda7dfedf50c98e1f7d909d61620b1f87d27b0dcd8f580cd7f2561c"
+    },
+    {
+      "path": "assets/photos/krd-krasnaya-2016.jpg",
+      "sha256": "9bc3d286d02fc5e232100deea32a31d0d95498be2a3bab99276589661d78de73"
+    },
+    {
+      "path": "assets/photos/spb-cafe-singer-2014.jpg",
+      "sha256": "f03f180c94b2c7ee5c0e1a02d6d91bf022bb0b4143fae1648660f6e7e0cae573"
+    },
+    {
+      "path": "assets/photos/spb-facade-2025.jpg",
+      "sha256": "988042c1422d67a28b37aaf8180042513926bf59d897d65b8299189816a31efb"
+    },
+    {
+      "path": "assets/photos/krd-housing-2019.jpg",
+      "sha256": "eaf329048f06c63717fcfe5d07219fd8d70e7bb56f2e47adeaf856998133105d"
     }
   ],
   "verificationDates": {
     "housing": "2026-10-04",
     "averageReferences": "2026-10-05",
     "hhAndDemography": "2026-10-06",
-    "salaryDistribution": "2026-10-07"
-  }
+    "salaryDistribution": "2026-10-07",
+    "sectorWages": "2026-10-26",
+    "portraitMedia": "2026-10-27",
+    "additionalContext": "2026-10-29",
+    "additionalTraffic": "2026-10-30",
+    "portraitChapterMedia": "2026-10-30",
+    "portraitHousingMedia": "2026-11-01",
+    "interface": "2026-11-01"
+  },
+  "contentRepresentation": "Exact Git blob bytes; Windows checkout may convert line endings."
 }
