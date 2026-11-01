@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "retrievedAt": "2026-10-27",
+  "photos": {
+    "spb": {
+      "title": "Панорамный вид Санкт-Петербурга",
+      "alt": "Панорамный вид Невы и исторического центра Санкт-Петербурга; на дальнем плане Исаакиевский собор.",
+      "author": "Vyacheslav Argenberg",
+      "capturedAt": "2007-08-17",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Saint_Petersburg,_Russia,_Panoramic_view.jpg",
+      "licenseName": "CC-BY-4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "localFile": "assets/photos/spb-neva.jpg",
+      "downloadURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint_Petersburg%2C_Russia%2C_Panoramic_view.jpg/1280px-Saint_Petersburg%2C_Russia%2C_Panoramic_view.jpg",
+      "sha256": "a20d0184e1a51d814a18c2fd9ca36df45650df92bcb5b1694fac89dbf13dee58",
+      "bytes": 248765,
+      "adaptation": "Масштабирование миниатюры Wikimedia; кадрирование в интерфейсе"
+    },
+    "krd": {
+      "title": "Парк «Краснодар» (Парк Галицкого)",
+      "alt": "Панорамный вид на стадион и прилегающую зелёную территорию в Краснодаре.",
+      "author": "Olegator1984; цветокоррекция — Fargoh",
+      "capturedAt": "2018-04-24",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Парк_Краснодар_(Парк_Галицкого).jpg",
+      "licenseName": "CC0-1.0",
+      "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "localFile": "assets/photos/krd-park.jpg",
+      "downloadURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/%D0%9F%D0%B0%D1%80%D0%BA_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80_%28%D0%9F%D0%B0%D1%80%D0%BA_%D0%93%D0%B0%D0%BB%D0%B8%D1%86%D0%BA%D0%BE%D0%B3%D0%BE%29.jpg/1280px-%D0%9F%D0%B0%D1%80%D0%BA_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80_%28%D0%9F%D0%B0%D1%80%D0%BA_%D0%93%D0%B0%D0%BB%D0%B8%D1%86%D0%BA%D0%BE%D0%B3%D0%BE%29.jpg",
+      "sha256": "df7032fb47628d49700de6b3d7eb4f8bf0e37c3a57effe6d798f284af49e3ee7",
+      "bytes": 241770,
+      "adaptation": "Масштабирование миниатюры Wikimedia; кадрирование в интерфейсе"
+    }
+  },
+  "fonts": [
+    {
+      "family": "Prata",
+      "sourceURL": "https://github.com/google/fonts/tree/main/ofl/prata",
+      "licenseName": "OFL-1.1",
+      "licenseFile": "assets/fonts/prata-OFL.txt",
+      "localFile": "assets/fonts/prata-Prata-Regular.ttf",
+      "sha256": "3b2b880737be3bda5f03554297b758516876157c88f9e3b3bae8fa1fc96a2c2c",
+      "bytes": 101284
+    },
+    {
+      "family": "Manrope",
+      "sourceURL": "https://github.com/google/fonts/tree/main/ofl/manrope",
+      "licenseName": "OFL-1.1",
+      "licenseFile": "assets/fonts/manrope-OFL.txt",
+      "localFile": "assets/fonts/manrope-Manrope[wght].ttf",
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6",
+      "bytes": 164700
+    }
+  ],
+  "chapterPhotos": {
+    "spb": {
+      "title": "Кафе Singer в Доме книги",
+      "alt": "Архивный вид интерьера кафе Singer: посетители у окна с видом на Казанский собор.",
+      "author": "sergejf",
+      "capturedAt": "2014-07-03",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:House_of_Books_bookshop_and_Cafe_Singer_(17836815494).jpg",
+      "licenseName": "CC-BY-2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "localFile": "assets/photos/spb-cafe-singer-2014.jpg",
+      "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/9/9c/House_of_Books_bookshop_and_Cafe_Singer_%2817836815494%29.jpg",
+      "sha256": "f03f180c94b2c7ee5c0e1a02d6d91bf022bb0b4143fae1648660f6e7e0cae573",
+      "bytes": 324054,
+      "originalSha256": "244929e957967408782adeae3056efee0d8ad02e716aad1af4c4a564af85f163",
+      "adaptation": "Уменьшение до 960 пикселей в ширину, JPEG качество 82; кадрирование в интерфейсе. Архивная иллюстрация городской жизни, не свидетельство текущих условий работы или расходов."
+    },
+    "krd": {
+      "title": "Пешеходы на Красной улице",
+      "alt": "Архивный вид Красной улицы в Краснодаре с пешеходами.",
+      "author": "Michaelversatile",
+      "capturedAt": "2016-09-11",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Opened_Krasnaya_street_(Krasnodar).jpg",
+      "licenseName": "CC-BY-3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "localFile": "assets/photos/krd-krasnaya-2016.jpg",
+      "downloadURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Opened_Krasnaya_street_%28Krasnodar%29.jpg/1280px-Opened_Krasnaya_street_%28Krasnodar%29.jpg",
+      "sha256": "9bc3d286d02fc5e232100deea32a31d0d95498be2a3bab99276589661d78de73",
+      "bytes": 149699,
+      "originalSha256": "d83f4905cb5cb1dda90c717cb2e5f93610db58be4d93a55ab30098d512ace108",
+      "adaptation": "Уменьшение до 960 пикселей в ширину, JPEG качество 82; кадрирование в интерфейсе. Архивная иллюстрация городской жизни, не свидетельство текущих условий работы или расходов."
+    }
+  },
+  "chapterPhotosCheckedAt": "2026-10-30",
+  "housingPhotos": {
+    "spb": {
+      "title": "Фасад на Большой Конюшенной улице",
+      "alt": "Фрагмент фасада здания на Большой Конюшенной улице, 1, в Санкт-Петербурге.",
+      "author": "Александр Сигачёв",
+      "capturedAt": "2025-04-05",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Saint_Petersburg_-_Bolshaya_Konyushennaya_1_-_2025-04_-_p4.jpg",
+      "licenseName": "CC-BY-SA-4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "localFile": "assets/photos/spb-facade-2025.jpg",
+      "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/2/25/Saint_Petersburg_-_Bolshaya_Konyushennaya_1_-_2025-04_-_p4.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "sha256": "988042c1422d67a28b37aaf8180042513926bf59d897d65b8299189816a31efb",
+      "bytes": 150116,
+      "originalSha256": "908e8bcac188e541c9ebdf1d6d57cbe72c1d6a531e4f39a1b42c365e96aeb84d",
+      "licenseCheckedAt": "2026-11-01",
+      "licensingPageSha256": "908ecfe96e9888139f5290197e9dc1ee2145844f38012f1de9fa03de301903d1",
+      "licenseBasis": "Выбрана CC BY-SA 4.0 из явного раздела Licensing; отметка CC0 в других частях страницы не используется.",
+      "adaptation": "Уменьшение до 960 пикселей в ширину, JPEG качество 82; кадрирование в интерфейсе. Адаптированное изображение распространяется под CC BY-SA 4.0. Иллюстрация, не оценка качества или стоимости жилья."
+    },
+    "krd": {
+      "title": "ЖК «Тургенев» в Краснодаре",
+      "alt": "Ночной вид на жилой комплекс «Тургенев» и прилегающие улицы Краснодара.",
+      "author": "Строительная компания — указано автором на Wikimedia Commons",
+      "capturedAt": "2019-12-31",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:%D0%96%D0%9A_%C2%AB%D0%A2%D1%83%D1%80%D0%B3%D0%B5%D0%BD%D0%B5%D0%B2%C2%BB.jpg",
+      "licenseName": "CC-BY-SA-4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "localFile": "assets/photos/krd-housing-2019.jpg",
+      "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/5/58/%D0%96%D0%9A_%C2%AB%D0%A2%D1%83%D1%80%D0%B3%D0%B5%D0%BD%D0%B5%D0%B2%C2%BB.jpg",
+      "sha256": "eaf329048f06c63717fcfe5d07219fd8d70e7bb56f2e47adeaf856998133105d",
+      "bytes": 174948,
+      "originalSha256": "8bc934766bfa7e2d8b4ef0249a8c42ef9cd4073685e22f1b3e6245cd045d34b0",
+      "licenseCheckedAt": "2026-11-01",
+      "licensingPageSha256": "b3279d5c32d2ad278241b65eede2fdec167c206cced73ea783e2e8e342873d90",
+      "licenseBasis": "CC BY-SA 4.0 указана в разделе Licensing первичной страницы.",
+      "adaptation": "Уменьшение до 960 пикселей в ширину, JPEG качество 82; кадрирование в интерфейсе. Адаптированное изображение распространяется под CC BY-SA 4.0. Иллюстрация, не оценка качества или стоимости жилья."
+    }
+  },
+  "housingPhotosCheckedAt": "2026-11-01"
+}
