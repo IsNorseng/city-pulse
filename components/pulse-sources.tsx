@@ -4,6 +4,7 @@ import {Tabs, TabsList, TabsTrigger, TabsContent} from '@/components/ui/tabs';
 import {observations, type Observation} from '@/lib/real-data';
 import {averageObservations} from '@/lib/average-data';
 import {SourcesProfile} from '@/components/pulse-extended';
+import {SectorWagesSources} from '@/components/pulse-sector-wages';
 import {money} from '@/lib/pulse-data';
 
 function description(record: Observation) {
@@ -32,8 +33,8 @@ export function SourceContent() {
       </TabsList>
 
       <TabsContent value="sources">
-        <p>Восемь показателей жилья из публикаций ЦИАН проверены 4 октября 2026 года. Две средние зарплаты и минимальный продуктовый набор сверены с официальными публикациями 5 октября. Расширенные показатели работы, зарплат и населения проверены 6–7 октября. Это фиксированные данные без автоматического обновления.</p>
-        <SourcesProfile/><h2 className="mt-7 text-lg">Средние зарплаты и стоимость жизни</h2>
+        <p>Восемь показателей жилья из публикаций ЦИАН проверены 4 октября 2026 года. Две средние зарплаты и минимальный продуктовый набор сверены с официальными публикациями 5 октября. Расширенные показатели работы, зарплат и населения проверены 6–7 октября. Отраслевые зарплаты за 2025 год сверены с сохранённым официальным XLSX 26 октября. Это фиксированные данные без автоматического обновления.</p>
+        <SectorWagesSources/><SourcesProfile/><h2 className="mt-7 text-lg">Средние зарплаты и стоимость жизни</h2>
         {Object.entries(averageObservations).flatMap(([cityKey, records])=>records.map(record=><article className="publication-card" key={`average-${cityKey}-${record.id}`}>
           <span className="panel-tag">{record.period}</span>
           <h3>{record.label} · {record.geo}</h3>
