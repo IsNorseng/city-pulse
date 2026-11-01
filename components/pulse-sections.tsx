@@ -6,7 +6,7 @@ import {money,type CityKey} from '@/lib/pulse-data';
 import {observation} from '@/lib/real-data';
 import {ObservationCard,RecordMeta} from './pulse-records';
 
-export function HousingSection({city,net}:{city:CityKey;period?:string;net:number|null}) {
+export function HousingSection({city,net,onBudget}:{city:CityKey;period?:string;net:number|null;onBudget:()=>void}) {
   const [market,setMarket]=useState('rent');
   const [room,setRoom]=useState('1');
   const availableRooms=market==='rent'?['1','2']:['1'];
@@ -51,10 +51,11 @@ export function HousingSection({city,net}:{city:CityKey;period?:string;net:numbe
     </section>
     <section className="panel">
       <h2>Сравните цены со своим доходом</h2>
-      <p className="section-copy">Расчёт использует ваш доход после налога, введённый в Обзоре, и опубликованные средние цены.</p>
-      <div className="stat-line"><span>Доля дохода на аренду однокомнатной</span><strong>{net&&rent?money(rent.value/net*100,1)+'%':'Введите доход в Обзоре'}</strong></div>
-      <div className="stat-line"><span>Стоимость однокомнатной / годовой доход</span><strong>{net&&sale?money(sale.value/(net*12),1)+' ×':'Введите доход в Обзоре'}</strong></div>
-      <div className="stat-line"><span>Квадратных метров на сумму годового дохода</span><strong>{net&&sqm?money(net*12/sqm.value,1)+' м²':'Введите доход в Обзоре'}</strong></div>
+      <p className="section-copy">Расчёт использует ваш доход после налога из вкладки «Расходы» и опубликованные средние цены.</p>
+      <button className="outline-button" onClick={onBudget}>{net?'Изменить свой доход':'Указать свой доход'}</button>
+      <div className="stat-line"><span>Доля дохода на аренду однокомнатной</span><strong>{net&&rent?money(rent.value/net*100,1)+'%':'Доход не указан'}</strong></div>
+      <div className="stat-line"><span>Стоимость однокомнатной / годовой доход</span><strong>{net&&sale?money(sale.value/(net*12),1)+' ×':'Доход не указан'}</strong></div>
+      <div className="stat-line"><span>Квадратных метров на сумму годового дохода</span><strong>{net&&sqm?money(net*12/sqm.value,1)+' м²':'Доход не указан'}</strong></div>
       <p className="model-note">Аренда и цена м² — сентябрь 2026, стоимость квартиры — январь 2026. Это разные срезы, а не текущие цены. Расчёт не показывает срок накопления: расходы на жизнь, ипотека, расходы на покупку и изменение цен не учтены.</p>
     </section>
   </>;
