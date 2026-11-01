@@ -1,0 +1,48 @@
+.additional-section{font-size:15px;line-height:1.75;min-width:0}
+.additional-intro{max-width:74ch;color:#5a535e;margin:0 0 26px}
+.additional-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.additional-card{min-width:0;padding:26px;border:1px solid var(--rule,#e4dfdc);background:#fbf9f5}
+.additional-card .additional-topic{display:flex;align-items:center;gap:9px;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#655a64;margin:0 0 16px}
+.additional-topic svg{stroke-width:1.5;flex:none}
+.additional-card h2{font:400 28px/1.35 Prata,Georgia,serif;letter-spacing:-.6px;margin:0 0 17px;overflow-wrap:anywhere}
+.additional-card h3{font:500 16px/1.55 Manrope,Arial,sans-serif;margin:0 0 12px}
+.additional-card p{margin-bottom:13px}
+.additional-card p:last-child{margin-bottom:0}
+.additional-period{font-size:12px;line-height:1.75;color:#605761}
+.additional-status{display:inline-block;padding:3px 8px;background:#eee2e5;color:#51444e;font-size:12px;line-height:1.7;margin-bottom:13px}
+.additional-card details{margin-top:18px;padding-top:3px;border-top:1px solid var(--rule,#e4dfdc)}
+.additional-card summary{min-height:44px;padding:10px 0;font-size:13px;color:#664c5a;cursor:pointer;line-height:1.7}
+.additional-card details p,.additional-sources{font-size:13px}
+.additional-card a,.additional-source-intro a{color:#73515f;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.additional-card a:focus-visible,.additional-source-intro a:focus-visible,.additional-card summary:focus-visible{outline:2px solid #80616e;outline-offset:4px}
+.additional-sources{list-style:none;padding:0;margin:12px 0 0}
+.additional-sources li{margin-bottom:12px}
+.additional-sources span{display:block;font-size:12px;color:#605761}
+.additional-traffic{padding:18px 0 0;border-top:1px solid var(--rule,#e4dfdc);margin-top:18px}
+.additional-traffic-value{font:400 43px/1.3 Prata,Georgia,serif;color:var(--rose-ink,#80616e);font-variant-numeric:tabular-nums}
+.additional-traffic-value span{font:400 13px/1.7 Manrope,Arial,sans-serif;color:#605761;margin-left:12px;white-space:nowrap}
+.additional-traffic-note{font-size:13px}
+.additional-traffic-note strong{font-weight:600}
+.additional-wide{margin-top:22px}
+.additional-section-head{display:flex;justify-content:space-between;align-items:start;gap:22px;flex-wrap:wrap}
+.additional-ranking{margin-top:22px;padding-top:22px;border-top:1px solid var(--rule,#e4dfdc)}
+.additional-ranking>h3{font-size:18px}
+.additional-universities{margin-top:12px}
+.additional-university{display:flex;justify-content:space-between;gap:24px;align-items:baseline;padding:13px 0;border-top:1px solid var(--rule,#e4dfdc);font-size:14px}
+.additional-university>span{min-width:0;overflow-wrap:anywhere}
+.additional-university strong{flex:none;color:var(--rose-ink,#80616e);font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums}
+.additional-university small{font-size:12px;color:#605761;font-weight:400}
+.additional-caption{border-top:1px solid var(--rule,#e4dfdc);padding-top:18px;margin-top:22px;font-size:13px;color:#605761}
+.additional-trends{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin-top:12px}
+.additional-trend{padding:20px 0;border-top:1px solid var(--rule,#e4dfdc);min-width:0}
+.additional-trend-value{font:400 26px/1.4 Prata,Georgia,serif;color:var(--rose-ink,#80616e);overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.additional-trend-change{font-size:14px;font-weight:500}
+.additional-trend-summary{max-width:85ch}
+.additional-safety{border-top:3px solid #80616e}
+.additional-crime-value{font:400 36px/1.3 Prata,Georgia,serif;color:#80616e;font-variant-numeric:tabular-nums}
+.additional-crime-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:22px;padding-top:22px;border-top:1px solid var(--rule,#e4dfdc)}
+.additional-source-intro{padding:26px 0;font-size:13px;color:#605761}
+.additional-source-intro h2{font:400 25px/1.4 Prata,Georgia,serif;margin-bottom:15px;color:var(--ink,#29282d)}
+@media(max-width:767px){.additional-grid,.additional-trends,.additional-crime-grid{grid-template-columns:1fr}.additional-card{padding:21px 18px}.additional-card h2{font-size:26px}.additional-section-head{gap:8px}.additional-university{gap:14px;align-items:start}.additional-university strong{white-space:normal;min-width:70px;max-width:100px;text-align:right}.additional-university small{display:block}.additional-traffic-value{font-size:40px}.additional-ranking>h3{font-size:16px}.additional-section{font-size:15px}}
+
+.additional-traffic-value.additional-traffic-time{font-size:clamp(24px,3vw,34px);white-space:nowrap;letter-spacing:-.04em}

@@ -2,14 +2,14 @@
 
 import type {CityKey} from '@/lib/pulse-data';
 import {AgeSexPyramid} from '@/components/pulse-demography';
+import {SectorWagesSection} from '@/components/pulse-sector-wages';
 import {
   extendedFacts, factsForCity, factsForSection, findExtendedFact, formatExtendedDate,
   formatExtendedValue, groupFactsBySection, isAgeGroupFact, type ExtendedFact,
 } from '@/lib/extended-data';
 
 const overviewIds = [
-  'actualMedian', 'offeredMedian', 'activeVacancies', 'population',
-  'unemploymentILO', 'registeredUnemployment',
+  'actualMedian', 'offeredMedian', 'unemploymentILO',
 ];
 
 function RegionalBadge({fact}: {fact: ExtendedFact}) {
@@ -21,14 +21,14 @@ function BasisNote({fact}: {fact: ExtendedFact}) {
   if (fact.basis === 'not_applicable') return null;
   const text = fact.basis === 'gross' ? 'До удержания налога'
     : fact.basis === 'net' ? 'На руки'
-      : 'До или после налога — источник не уточняет';
+      : 'До или после налога — не уточнено';
   return <p className="profile-basis">{text}</p>;
 }
 
 function SourceDetails({fact,compact=false}: {fact: ExtendedFact;compact?:boolean}) {
   return <details className="profile-source-details">
     <summary>Как проверить показатель</summary>
-    {compact&&<><p className="profile-description">{fact.description}</p><p className="profile-scope">{fact.scope}</p></>}
+    {compact&&<p className="profile-description">{fact.description}</p>}
     <dl>
       <div><dt>Публикация</dt><dd>{fact.published ? formatExtendedDate(fact.published) : 'Дата публикации не указана'}</dd></div>
       <div><dt>Проверка</dt><dd>{formatExtendedDate(fact.dateChecked)}</dd></div>
@@ -39,17 +39,23 @@ function SourceDetails({fact,compact=false}: {fact: ExtendedFact;compact?:boolea
 
 export function ExtendedFactCard({fact,compact=false}: {fact: ExtendedFact;compact?:boolean}) {
   return <article className={`profile-card${compact?' profile-card-compact':''}`}>
-    <RegionalBadge fact={fact}/>
-    <h3>{fact.label}</h3>
-    <BasisNote fact={fact}/>
+    <div className="profile-card-heading">
+      <RegionalBadge fact={fact}/>
+      <h3>{fact.label}</h3>
+      <BasisNote fact={fact}/>
+    </div>
     <p className="profile-number">{formatExtendedValue(fact)}<span>{fact.unit}</span></p>
-    <p className="profile-period">{fact.period}</p>
-    <p className="profile-geography">{fact.geo}</p>
+    <div className="profile-card-meta">
+      <p className="profile-period">{fact.period}</p>
+      <p className="profile-geography">{fact.geo}</p>
+    </div>
     {!compact&&<p className="profile-description">{fact.description}</p>}
     {fact.id === 'actualModalInterval' && <p className="profile-method-note">Наибольшая плотность среди групп с известными границами. Открытые группы не сравнивались; точная наиболее частая зарплата по этим данным не определяется.</p>}
-    {!compact&&<p className="profile-scope">{fact.scope}</p>}
-    <a className="profile-source-link" href={fact.url} target="_blank" rel="noreferrer">Источник: {fact.source} ↗</a>
-    <SourceDetails fact={fact} compact={compact}/>
+    <p className="profile-scope">{fact.scope}</p>
+    <div className="profile-card-proof">
+      <a className="profile-source-link" href={fact.url} target="_blank" rel="noreferrer">Источник: {fact.source} ↗</a>
+      <SourceDetails fact={fact} compact={compact}/>
+    </div>
   </article>;
 }
 
@@ -72,7 +78,12 @@ export function WorkSection({city}: {city: CityKey}) {
     {key: 'unemployment' as const, heading: 'Безработица', explanation: 'Безработица по обследованию населения и зарегистрированная безработица учитывают разные группы людей. Период, территория и охват указаны отдельно у каждого показателя.'},
   ];
   return <div className="profile-sections">
-    {sections.map(section => groups[section.key].length > 0 && <section className="panel profile-section" key={section.key}>
+    <nav className="work-jumps" aria-label="Показатели работы">
+      {city==='spb'&&<a href="#sector-wages">По отраслям</a>}
+      {sections.filter(section=>groups[section.key].length>0).map(section=><a key={section.key} href={`#work-${section.key}`}>{section.key==='wages'?'Фактические зарплаты':section.key==='vacancies'?'Вакансии и HH':'Безработица'}</a>)}
+    </nav>
+    <SectorWagesSection city={city}/>
+    {sections.map(section => groups[section.key].length > 0 && <section className="panel profile-section" id={`work-${section.key}`} key={section.key}>
       <div className="section-heading"><h2>{section.heading}</h2></div>
       <p className="profile-section-intro">{section.explanation}</p>
       <div className="profile-grid">{groups[section.key].map(fact => <ExtendedFactCard key={fact.id} fact={fact}/>)}</div>
@@ -92,7 +103,7 @@ export function PopulationSection({city}: {city: CityKey}) {
       {cards.length > 0 && <div className="profile-grid">{cards.map(fact => <ExtendedFactCard key={fact.id} fact={fact}/>)}</div>}
       {ageGroups.length > 0 && <div className="profile-age-groups">
         <h3>Возрастные группы</h3>
-        <div className="profile-table-scroll"><table className="profile-table">
+        <div className="profile-table-scroll" tabIndex={0} role="region" aria-label="Возрастные группы: таблица с горизонтальной прокруткой"><table className="profile-table">
           <thead><tr><th scope="col">Группа</th><th scope="col">Значение</th><th scope="col">Период и территория</th><th scope="col">Источник</th></tr></thead>
           <tbody>{ageGroups.map(fact => <tr key={fact.id}>
             <th scope="row">{fact.label}</th>
@@ -112,7 +123,7 @@ export function SourcesProfile() {
   return <section className="profile-sources">
     <h2>Зарплаты, рынок труда и население</h2>
     <p className="profile-section-intro">Период показателя, дата публикации и дата проверки обозначают разные вещи. Ниже сохранены ссылки и места в первоисточниках.</p>
-    <div className="profile-table-scroll"><table className="profile-table profile-sources-table">
+    <div className="profile-table-scroll" tabIndex={0} role="region" aria-label="Источники зарплат, рынка труда и населения"><table className="profile-table profile-sources-table">
       <thead><tr><th scope="col">Показатель</th><th scope="col">Значение и период</th><th scope="col">Источник и пояснения</th></tr></thead>
       <tbody>{extendedFacts.map(fact => <tr key={`${fact.cityKey}-${fact.id}`}>
         <th scope="row"><RegionalBadge fact={fact}/>{fact.label}<span className="profile-table-secondary">{fact.geo}</span></th>

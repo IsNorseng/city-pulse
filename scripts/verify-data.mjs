@@ -3,6 +3,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
 import {verifyProfile} from './verify-profile.mjs';
+import {verifySectorWages} from './verify-sector-wages.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const read = name => JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
@@ -171,6 +172,8 @@ const averageLoader = fs.readFileSync(path.join(root,'lib/average-data.ts'),'utf
 assert(averageLoader.includes('verified-averages.json'),'Official cards must use the accepted average dataset');
 
 verifyProfile();
+const sectorWages = verifySectorWages();
+console.log(`Verified sector wages: ${sectorWages.sectors} original OKVED2 rows, Saint Petersburg, ${sectorWages.periodKey}.`);
 console.log(`Verified dataset: ${seen.size} observations match direct primary table evidence.`);
 console.log(`Verified official references: ${officialSeen.size} observations match direct official evidence.`);
 console.log('This checks saved evidence consistency; it does not refetch the sources or certify freshness.');

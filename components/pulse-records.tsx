@@ -1,6 +1,4 @@
 "use client";
-import {Tooltip,TooltipTrigger,TooltipContent} from '@/components/ui/tooltip';
-import {Info} from 'lucide-react';
 import {money} from '@/lib/pulse-data';
 import type {Observation} from '@/lib/real-data';
 
@@ -16,17 +14,7 @@ export function RecordMeta({data}:{data:Observation}) {
   return <div className="data-meta">
     <span>{data.period}</span>
     <a className="source-link" href={data.url} target="_blank" rel="noreferrer">Источник: ЦИАН</a>
-    <Tooltip>
-      <TooltipTrigger asChild>
-        <button className="info-button" aria-label={`Подробнее о показателе: ${data.label}`}><Info size={14}/></button>
-      </TooltipTrigger>
-      <TooltipContent className="metric-tooltip">
-        {data.source} · {data.geo}<br/>
-        Опубликовано: {humanDate(data.published)}<br/>
-        Проверено: {humanDate(data.dateChecked)}<br/>
-        {data.scope}
-      </TooltipContent>
-    </Tooltip>
+    <details className="record-details"><summary>Как проверить</summary><p>{data.source} · {data.geo}<br/>Опубликовано: {humanDate(data.published)}<br/>Проверено: {humanDate(data.dateChecked)}<br/>{data.scope}</p></details>
   </div>;
 }
 

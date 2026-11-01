@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-10-29",
+  "dataset": "data/additional-universities.json",
+  "purpose": "Выбранные строки первичных таблиц рейтингов для отдельной справки о вузах; не рейтинг городов и не полный реестр образовательных организаций.",
+  "verification": "Три таблицы и их методики открыты непосредственно на сайте RAEX; сверены названия вузов, выпуск, столбец ранга и географический охват. Дата проверки не заменяет год выпуска рейтинга.",
+  "sources": [
+    {
+      "rankingId": "raex-100-2026",
+      "publisher": "RAEX",
+      "sourceURL": "https://raex-rr.com/education/russian_universities/top-100_universities/2026/",
+      "publicationDate": "2026-06-16",
+      "methodologyURL": "https://raex-rr.com/education/russian_universities/top-100_universities/2026/methods/",
+      "valueLocator": "Основная таблица: первый столбец № — текущий ранг 2026. Соседний столбец Место, 2025 год не используется.",
+      "extractedRows": [
+        { "universityId": "spbu", "rank": 4 },
+        { "universityId": "spbstu", "rank": 9 },
+        { "universityId": "itmo", "rank": 15 },
+        { "universityId": "spmi", "rank": 28 },
+        { "universityId": "pavlov", "rank": 29 },
+        { "universityId": "leti", "rank": 34 },
+        { "universityId": "herzen", "rank": 41 },
+        { "universityId": "unecon", "rank": 46 },
+        { "universityId": "gpmu", "rank": 49 },
+        { "universityId": "almazov", "rank": 55 },
+        { "universityId": "kubsau", "rank": 66 },
+        { "universityId": "kubgmu", "rank": 89 }
+      ],
+      "methodReview": {
+        "factorsPercent": { "education": 50, "graduateDemand": 30, "research": 20 },
+        "coverage": "Головные организации, без филиалов; исключены творческие, спортивные и силовые вузы. Используются статистика и опросы.",
+        "selection": "Для Петербурга выбраны 10 организаций с наименьшими значениями ранга среди петербургских участников; для Краснодара сохранены оба участника RAEX-100/2026."
+      }
+    },
+    {
+      "rankingId": "three-missions-global-2025",
+      "publisher": "RAEX / Ассоциация составителей рейтингов",
+      "sourceURL": "https://raex-rr.com/education/international_universities/three_missions_Russia/2025/",
+      "publicationDate": "2025-10-14",
+      "methodologyURL": "https://raex-rr.com/education/international_universities/three_missions_Russia/2025/methods/",
+      "valueLocator": "Строки Кубанского государственного университета и Кубанского государственного технологического университета; столбец Место в глобальном рейтинге, не первый столбец российского среза.",
+      "extractedRows": [
+        { "universityId": "kubsu", "nationalRankRangeNotUsed": [113, 156], "globalRankRange": [1751, 2000] },
+        { "universityId": "kubstu", "nationalRankRangeNotUsed": [113, 156], "globalRankRange": [1751, 2000] }
+      ],
+      "methodReview": {
+        "rangeHandling": "Внутри интервальных групп алфавитный порядок; точные места и середины диапазонов не присваиваются.",
+        "coverage": "Международный отбор вузов с ограничениями по профилю и численности; репутационные опросы исключены. Позиция относится к организации, не к отдельной программе.",
+        "editionHandling": "Это проверенный сохранённый выпуск 2025, не заявление об актуальном месте в выпуске 2026."
+      }
+    },
+    {
+      "rankingId": "raex-local-yufo-2026",
+      "publisher": "RAEX",
+      "sourceURL": "https://raex-rr.com/education/local_university_rating/local_university_rating_YUFO/2026/",
+      "publicationDate": "2026-02-26",
+      "methodologyURL": "https://raex-rr.com/education/local_university_rating/local_university_rating_YUFO/2026/methods/",
+      "valueLocator": "Первый столбец № основной таблицы; не отдельные ранги групп Образование, Наука, Общество.",
+      "extractedRows": [
+        { "universityId": "imsit", "rank": 14 },
+        { "universityId": "kmi", "rank": 16 }
+      ],
+      "methodReview": {
+        "factorsPercent": { "education": 45, "research": 25, "society": 30 },
+        "coverage": "22 участника из 7 регионов ЮФО. Филиалы и вузы особой специфики исключены; также исключены участники RAEX-100 или Трёх миссий за 2024–2025 годы.",
+        "identityCheck": "Кубанский медицинский институт (kmi) и Кубанский государственный медицинский университет (kubgmu) — разные организации. Морской университет Ушакова, Сочинский и Армавирский вузы не включены в Краснодар: это другие города края."
+      }
+    }
+  ],
+  "displayRules": [
+    "Группировать по rankingId, рядом всегда показывать название рейтинга, выпуск и охват.",
+    "Не сортировать вместе числовые ранги разных рейтингов, не вычислять среднее место или рейтинг города.",
+    "Диапазон выводить полностью: 1751–2000 в мире; не выдавать 113–156 российского среза за глобальное место.",
+    "Не переносить место головной организации на филиал и не называть выборку полным списком вузов города.",
+    "Рейтинговая позиция не гарантирует качество каждой программы и не определяет предпочтения абитуриента."
+  ]
+}

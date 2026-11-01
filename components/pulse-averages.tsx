@@ -44,6 +44,6 @@ export function AverageSection({city,onUseSalary}:{city:CityKey;onUseSalary:(val
         </article>;
       })}
     </div>
-    <p className="average-note">Официальные ориентиры относятся к 2025 году, цены жилья — к 2026 году. Расходы на жизнь указываются в личном бюджете ниже.</p>
+    <p className="average-note">Официальные ориентиры относятся к 2025 году, цены жилья — к 2026 году. Свои расходы можно указать во вкладке «Расходы».</p>
   </section>;
 }

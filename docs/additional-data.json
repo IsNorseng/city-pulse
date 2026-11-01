@@ -1,0 +1,906 @@
+{
+  "assembledAt": "2026-10-30",
+  "policy": "Фиксированный дополнительный раздел. Дата сборки не обновляет даты проверки исходных наблюдений.",
+  "context": {
+    "schemaVersion": 2,
+    "checkedAt": "2026-10-29",
+    "updatePolicy": "frozen",
+    "sources": {
+      "spbMetro": {
+        "name": "Администрация Санкт-Петербурга",
+        "url": "https://www.gov.spb.ru/press/governor/309834/",
+        "period": "26 декабря 2025",
+        "locator": "Сообщение об открытии Путиловской и Юго-Западной",
+        "note": "Событие инфраструктуры, не измерение времени поездки от каждого адреса."
+      },
+      "krdTransport": {
+        "name": "Официальный туристический портал Краснодара",
+        "url": "https://tourism.krd.ru/o-krasnodare/",
+        "period": "Страница просмотрена 29 октября 2026",
+        "locator": "Раздел городского транспорта",
+        "note": "Перечень видов транспорта, не оценка частоты и охвата жителей."
+      },
+      "krdRoutes": {
+        "name": "Краснодарское трамвайно-троллейбусное управление",
+        "url": "https://new.kttu.ru/tram_kttu",
+        "period": "Страница просмотрена 29 октября 2026",
+        "locator": "Трамвайные маршруты, в том числе №11",
+        "note": "Опубликованный маршрут не измеряет фактический интервал и время пути."
+      },
+      "spbCulture": {
+        "name": "Комитет по культуре Санкт-Петербурга",
+        "url": "https://www.gov.spb.ru/gov/otrasl/c_culture/statistic/",
+        "period": "Сведения за 2025 год",
+        "locator": "Посещаемость подведомственных учреждений",
+        "note": "Охват не равен всем учреждениям города. Новые числовые выписки до повторной сверки оригинала не включены."
+      },
+      "krdCulture": {
+        "name": "Краснодарское творческое объединение Премьера",
+        "url": "https://www.to-premiera.com/",
+        "period": "Афиша просмотрена 29 октября 2026",
+        "locator": "Афиша: опера, балет, джаз",
+        "note": "Примеры культурного предложения, не полный перечень и не оценка социальных связей."
+      },
+      "spbCrime": {
+        "name": "Прокуратура Санкт-Петербурга",
+        "url": "https://epp.genproc.gov.ru/ru/proc_78/mass-media/events-and-meetings/e8377455/",
+        "period": "2025 год",
+        "locator": "Итоги2025: 59 тыс. зарегистрированных преступлений, −9,3%; тяжких и особо тяжких21,5 тыс., −5,2%",
+        "note": "Публикация06.02.2026. Территория федерального города без Ленинградской области. Значения округлены источником."
+      },
+      "krdCrime": {
+        "name": "Официальный канал УМВД России по городу Краснодару",
+        "url": "https://t.me/mvd23krasnodar/6919",
+        "period": "2025 год",
+        "locator": "Итоги оперативно-служебной деятельности:16263 зарегистрированных преступления, −12,7%",
+        "note": "Границы между городом-поселением и муниципалитетом в сообщении не уточнены. На душу населения не пересчитывается."
+      },
+      "convictionMethod": {
+        "name": "Судебный департамент при Верховном Суде РФ",
+        "url": "https://cdep.ru/index.php?id=301&item=5789",
+        "period": "Инструкция №124 от25.06.2021",
+        "locator": "Раздел статистики судимости, формы10.3,10.3.1 и10-а",
+        "note": "Структура по основной квалификации, все составы и виды наказаний — разные срезы."
+      },
+      "twoGisTraffic2025": {
+        "name": "2ГИС Компас · Красный час",
+        "url": "https://compass.2gis.ru/traffic/",
+        "period": "Опубликовано в марте 2025; календарный период наблюдений не раскрыт",
+        "locator": "Заключительная диаграмма «Самая низкая средняя скорость в городах — с 17 до 20 часов»; панели Санкт-Петербурга и Краснодара",
+        "note": "Почасовые скорости сравниваются со среднесуточной скоростью. Это описание времени замедления, не средний балл пробок за год. Размер выборки и веса усреднения не раскрыты."
+      }
+    },
+    "cities": {
+      "spb": {
+        "transport": {
+          "heading": "Метро и наземная сеть",
+          "summary": "В декабре 2025 открылись Путиловская и Юго-Западная — первые станции шестой линии метро.",
+          "sourceIds": [
+            "spbMetro"
+          ],
+          "congestion": {
+            "indicator": "Время наиболее медленного движения в исследовании 2ГИС",
+            "peakWindow": {
+              "from": "17:00",
+              "to": "20:00"
+            },
+            "publicationPeriod": "2025-03",
+            "publicationLabel": "Март 2025",
+            "observationPeriod": null,
+            "sourceId": "twoGisTraffic2025",
+            "annualAverage": null,
+            "limitation": "Период исходных наблюдений не раскрыт. Публикация марта 2025 не описывает дорожную ситуацию в 2026 году.",
+            "currentStatus": "Проверенное среднее за 2023–2026 годы не найдено. Разовые баллы и часы пик не заменяют среднюю загруженность. Ряд по годам и рейтинг городов не построены."
+          }
+        },
+        "districts": {
+          "heading": "Выбирать стоит по адресу",
+          "summary": "Для Красносельского района Юго-Западная стала первой станцией метро. Это конкретное изменение транспортной связи, а не оценка комфортности всего района.",
+          "limitation": "Полная сопоставимая таблица по школам, медицине, зелени, шуму и времени пути не подтверждена. Рейтинг лучших и худших районов не рассчитан.",
+          "sourceIds": [
+            "spbMetro"
+          ]
+        },
+        "medicine": {
+          "heading": "Сколько ждать врача?",
+          "status": "Пока без проверенной оценки",
+          "summary": "Сопоставимый фактический срок ожидания приёма не найден. Число клиник само по себе не отвечает на вопрос доступности.",
+          "limitation": "Для оценки нужны врачи и мощность поликлиник на население, фактическое ожидание по специальностям и разделение ОМС/платной помощи. Нормативный срок не является измеренной очередью."
+        },
+        "culture": {
+          "heading": "Что есть помимо работы",
+          "summary": "Комитет по культуре публикует посещаемость подведомственных музеев, театров, библиотек и других учреждений.",
+          "limitation": "Охват не равен всей культурной жизни города. Посещения включают туристов и повторные визиты; они не измеряют лёгкость поиска общения.",
+          "sourceIds": [
+            "spbCulture"
+          ]
+        },
+        "safety": {
+          "value": 59000,
+          "approximate": true,
+          "change": -9.3,
+          "period": "2025 год",
+          "geo": "Санкт-Петербург, без Ленинградской области",
+          "sourceId": "spbCrime",
+          "severe": {
+            "value": 21500,
+            "approximate": true,
+            "change": -5.2
+          },
+          "convictionsStatus": "Найдена выписка за2024 год, но оригинал недоступен для прямой сверки. Доли осуждённых пока не включены."
+        }
+      },
+      "krd": {
+        "transport": {
+          "heading": "Город наземных маршрутов",
+          "summary": "Автобусы, трамваи и троллейбусы составляют городскую транспортную сеть. Действующего метро нет.",
+          "sourceIds": [
+            "krdTransport",
+            "krdRoutes"
+          ],
+          "congestion": {
+            "indicator": "Время наиболее медленного движения в исследовании 2ГИС",
+            "peakWindow": {
+              "from": "17:00",
+              "to": "20:00"
+            },
+            "publicationPeriod": "2025-03",
+            "publicationLabel": "Март 2025",
+            "observationPeriod": null,
+            "sourceId": "twoGisTraffic2025",
+            "annualAverage": null,
+            "limitation": "Период исходных наблюдений не раскрыт. Публикация марта 2025 не описывает дорожную ситуацию в 2026 году.",
+            "currentStatus": "Проверенное среднее за 2023–2026 годы не найдено. Разовые баллы и часы пик не заменяют среднюю загруженность. Ряд по годам и рейтинг городов не построены."
+          }
+        },
+        "districts": {
+          "heading": "Сначала — ежедневный маршрут",
+          "summary": "Юбилейный связан трамвайным маршрутом с вокзалом Краснодар-I. Удобство нужно оценивать по расстоянию до остановки, пересадкам и фактическому времени поездки.",
+          "limitation": "Микрорайоны и административные округа не объединены в одну шкалу. Полной сопоставимой оценки комфортности нет; наличие маршрута не гарантирует короткую дорогу от любого дома.",
+          "sourceIds": [
+            "krdRoutes"
+          ]
+        },
+        "medicine": {
+          "heading": "Доступность требует проверки",
+          "status": "Нет проверенного городского среза",
+          "summary": "Городские показатели врачебной обеспеченности и фактического ожидания приёма пока не подтверждены.",
+          "limitation": "Данные Краснодарского края не подменяют городские. Число организаций-клиник не равно числу адресов оказания помощи или свободных записей по ОМС."
+        },
+        "culture": {
+          "heading": "Опера, балет и джаз",
+          "summary": "Эти направления представлены в афише творческого объединения Премьера. Есть программы для разных возрастов.",
+          "limitation": "Это примеры предложения, не полный перечень площадок, не оценка доступности билетов и не показатель социальных связей.",
+          "sourceIds": [
+            "krdCulture"
+          ]
+        },
+        "safety": {
+          "value": 16263,
+          "approximate": false,
+          "change": -12.7,
+          "period": "2025 год",
+          "geo": "Территория учёта городского УМВД; точные границы требуют уточнения",
+          "sourceId": "krdCrime",
+          "convictionsStatus": "Проверенная городская разбивка осуждённых по статьям не найдена. Краевые итоги не подменяют городские."
+        }
+      }
+    },
+    "limitations": [
+      "Дополнительные условия жизни не сведены в общий балл.",
+      "Зарегистрированные преступления, осуждённые лица и заключённые не объединяются.",
+      "Неподтверждённые судебные и медицинские числа не включены.",
+      "Баллы Яндекса за 2013 год исключены из карточек. Справка 2ГИС опубликована в марте 2025; период исходных наблюдений не раскрыт. Средняя загруженность за 2023–2026 годы не подтверждена."
+    ],
+    "trafficCheckedAt": "2026-10-30"
+  },
+  "education": {
+    "checkedAt": "2026-10-29",
+    "rankings": [
+      {
+        "id": "raex-100-2026",
+        "name": "RAEX-100 — лучшие вузы России",
+        "edition": 2026,
+        "scope": "Россия · общероссийское место",
+        "sourceURL": "https://raex-rr.com/education/russian_universities/top-100_universities/2026/",
+        "methodologyURL": "https://raex-rr.com/education/russian_universities/top-100_universities/2026/methods/",
+        "limitation": "Рейтинг головных организаций: филиалы, творческие, спортивные и силовые вузы исключены. Условия образования — 50%, востребованность выпускников — 30%, наука — 20%. Место относится к университету в целом, а не к каждой программе; выборка ниже не является полным списком вузов города. Ранги разных рейтингов не сопоставляются."
+      },
+      {
+        "id": "three-missions-global-2025",
+        "name": "Три миссии университета — глобальный рейтинг",
+        "edition": 2025,
+        "scope": "Мир · диапазон глобальных мест",
+        "sourceURL": "https://raex-rr.com/education/international_universities/three_missions_Russia/2025/",
+        "methodologyURL": "https://raex-rr.com/education/international_universities/three_missions_Russia/2025/methods/",
+        "limitation": "Используется столбец глобального места, а не соседний российский срез. Диапазон 1751–2000 не означает точное место: внутри группы вузы перечислены по алфавиту. Выпуск 2025 года сохранён как отдельный срез и не объявляется самым свежим. Рейтинг не оценивает качество каждой образовательной программы; его позиции не сопоставимы с RAEX-100 и локальным рейтингом."
+      },
+      {
+        "id": "raex-local-yufo-2026",
+        "name": "RAEX — локальный рейтинг вузов ЮФО",
+        "edition": 2026,
+        "scope": "Южный федеральный округ · место среди участников локального рейтинга",
+        "sourceURL": "https://raex-rr.com/education/local_university_rating/local_university_rating_YUFO/2026/",
+        "methodologyURL": "https://raex-rr.com/education/local_university_rating/local_university_rating_YUFO/2026/methods/",
+        "limitation": "Отдельная выборка региональных вузов без филиалов. Из неё исключены участники RAEX-100 или Трёх миссий за 2024–2025 годы и учреждения с особой спецификой. Образование — 45%, наука — 25%, общество — 30%. Это место в локальном списке, а не по всей России и не среди всех вузов ЮФО; общей сортировки с другими рейтингами нет."
+      }
+    ],
+    "universities": [
+      {
+        "cityKey": "spb",
+        "id": "spbu",
+        "name": "Санкт-Петербургский государственный университет",
+        "rankingId": "raex-100-2026",
+        "rank": 4,
+        "rankRange": null
+      },
+      {
+        "cityKey": "spb",
+        "id": "spbstu",
+        "name": "Санкт-Петербургский политехнический университет Петра Великого",
+        "rankingId": "raex-100-2026",
+        "rank": 9,
+        "rankRange": null
+      },
+      {
+        "cityKey": "spb",
+        "id": "itmo",
+        "name": "Университет ИТМО",
+        "rankingId": "raex-100-2026",
+        "rank": 15,
+        "rankRange": null
+      },
+      {
+        "cityKey": "spb",
+        "id": "spmi",
+        "name": "Санкт-Петербургский горный университет императрицы Екатерины II",
+        "rankingId": "raex-100-2026",
+        "rank": 28,
+        "rankRange": null
+      },
+      {
+        "cityKey": "spb",
+        "id": "pavlov",
+        "name": "Первый Санкт-Петербургский государственный медицинский университет имени академика И. П. Павлова",
+        "rankingId": "raex-100-2026",
+        "rank": 29,
+        "rankRange": null
+      },
+      {
+        "cityKey": "spb",
+        "id": "leti",
+        "name": "Санкт-Петербургский государственный электротехнический университет «ЛЭТИ» имени В. И. Ульянова (Ленина)",
+        "rankingId": "raex-100-2026",
+        "rank": 34,
+        "rankRange": null
+      },
+      {
+        "cityKey": "spb",
+        "id": "herzen",
+        "name": "Российский государственный педагогический университет имени А. И. Герцена",
+        "rankingId": "raex-100-2026",
+        "rank": 41,
+        "rankRange": null
+      },
+      {
+        "cityKey": "spb",
+        "id": "unecon",
+        "name": "Санкт-Петербургский государственный экономический университет",
+        "rankingId": "raex-100-2026",
+        "rank": 46,
+        "rankRange": null
+      },
+      {
+        "cityKey": "spb",
+        "id": "gpmu",
+        "name": "Санкт-Петербургский государственный педиатрический медицинский университет",
+        "rankingId": "raex-100-2026",
+        "rank": 49,
+        "rankRange": null
+      },
+      {
+        "cityKey": "spb",
+        "id": "almazov",
+        "name": "Национальный медицинский исследовательский центр имени В. А. Алмазова",
+        "rankingId": "raex-100-2026",
+        "rank": 55,
+        "rankRange": null
+      },
+      {
+        "cityKey": "krd",
+        "id": "kubsau",
+        "name": "Кубанский государственный аграрный университет имени И. Т. Трубилина",
+        "rankingId": "raex-100-2026",
+        "rank": 66,
+        "rankRange": null
+      },
+      {
+        "cityKey": "krd",
+        "id": "kubgmu",
+        "name": "Кубанский государственный медицинский университет",
+        "rankingId": "raex-100-2026",
+        "rank": 89,
+        "rankRange": null
+      },
+      {
+        "cityKey": "krd",
+        "id": "kubsu",
+        "name": "Кубанский государственный университет",
+        "rankingId": "three-missions-global-2025",
+        "rank": null,
+        "rankRange": [
+          1751,
+          2000
+        ]
+      },
+      {
+        "cityKey": "krd",
+        "id": "kubstu",
+        "name": "Кубанский государственный технологический университет",
+        "rankingId": "three-missions-global-2025",
+        "rank": null,
+        "rankRange": [
+          1751,
+          2000
+        ]
+      },
+      {
+        "cityKey": "krd",
+        "id": "imsit",
+        "name": "Академия маркетинга и социально-информационных технологий — ИМСИТ",
+        "rankingId": "raex-local-yufo-2026",
+        "rank": 14,
+        "rankRange": null
+      },
+      {
+        "cityKey": "krd",
+        "id": "kmi",
+        "name": "Кубанский медицинский институт",
+        "rankingId": "raex-local-yufo-2026",
+        "rank": 16,
+        "rankRange": null
+      }
+    ]
+  },
+  "hhTrends": {
+    "schemaVersion": 1,
+    "updatePolicy": "frozen",
+    "assembledAt": "2026-10-29",
+    "source": {
+      "name": "HH Статистика / HeadHunter",
+      "url": "https://stats.hh.ru/api/v1/data/RU",
+      "retrievedAt": "2026-10-06T13:53:12.474Z",
+      "sourceSha256": "e0227e95d1cd206267ffd619db1c9352d0ba4947b7fd3ee83b3f250ce79a87fe",
+      "archive": "data/evidence/hh-cities-snapshot.json"
+    },
+    "previousPeriod": "2025-09",
+    "currentPeriod": "2026-09",
+    "records": [
+      {
+        "cityKey": "spb",
+        "areaId": "2",
+        "id": "hhIndex",
+        "metric": "hhindex",
+        "monthIndex": 8,
+        "header": [
+          "",
+          "2025",
+          "2026"
+        ],
+        "previousRaw": "7.4",
+        "currentRaw": "10.3"
+      },
+      {
+        "cityKey": "spb",
+        "areaId": "2",
+        "id": "offeredMedian",
+        "metric": "averageCompensation",
+        "monthIndex": 8,
+        "header": [
+          "",
+          "2025",
+          "2026"
+        ],
+        "previousRaw": "87690.2608",
+        "currentRaw": "94114.20009"
+      },
+      {
+        "cityKey": "krd",
+        "areaId": "53",
+        "id": "hhIndex",
+        "metric": "hhindex",
+        "monthIndex": 8,
+        "header": [
+          "",
+          "2025",
+          "2026"
+        ],
+        "previousRaw": "8.7",
+        "currentRaw": "13.1"
+      },
+      {
+        "cityKey": "krd",
+        "areaId": "53",
+        "id": "offeredMedian",
+        "metric": "averageCompensation",
+        "monthIndex": 8,
+        "header": [
+          "",
+          "2025",
+          "2026"
+        ],
+        "previousRaw": "77930.16003",
+        "currentRaw": "85680.14369"
+      }
+    ]
+  },
+  "trendInputs": {
+    "population": [
+      {
+        "cityKey": "spb",
+        "id": "populationChange",
+        "section": "demography",
+        "label": "Изменение населения",
+        "value": 55159,
+        "interval": null,
+        "decimals": 0,
+        "unit": "человек",
+        "period": "2024 год",
+        "geo": "Санкт-Петербург",
+        "geoLevel": "federal_subject",
+        "source": "Росстат",
+        "url": "https://rosstat.gov.ru/storage/mediabank/OkPopul_Comp2025_Site.xlsx",
+        "published": "2025-03-14",
+        "dateChecked": "2026-10-06",
+        "scope": "Вся административная территория субъекта РФ; краевые значения не являются муниципальными или городскими.",
+        "description": "Официальное изменение численности населения за год; естественная и миграционная составляющие показаны отдельно.",
+        "basis": "not_applicable",
+        "aggregation": "published_official",
+        "locator": "Лист «Всего», строка 41, ячейка C41; заголовки строк 5–8.",
+        "evidenceId": "pop_components",
+        "change": null,
+        "changeLabel": null,
+        "approximate": false,
+        "verification": "direct_primary"
+      },
+      {
+        "cityKey": "krd",
+        "id": "populationCityChange",
+        "section": "demography",
+        "label": "Изменение между опубликованными оценками",
+        "value": 16231,
+        "interval": null,
+        "decimals": 0,
+        "unit": "человек",
+        "period": "Между 1 января 2024 и 1 января 2025",
+        "geo": "Город Краснодар — населённый пункт, без подчинённых сельских поселений",
+        "geoLevel": "city",
+        "source": "Росстат",
+        "url": "https://rosstat.gov.ru/storage/mediabank/%D0%A1hisl_MO_01-01-2025.xlsx",
+        "published": "2025-04-25",
+        "dateChecked": "2026-10-06",
+        "scope": "Не называется миграционным или естественным приростом.",
+        "description": "Разность двух опубликованных оценок с тем же территориальным кодом. Это расчёт; возможные уточнения и изменения границ не отделены от изменения численности.",
+        "basis": "not_applicable",
+        "aggregation": "difference_of_published_estimates",
+        "locator": "2025: «Численность_по_МО», C7025; 2024: тот же лист, C7128; код 037010000011002.",
+        "evidenceId": "municipal2025",
+        "change": null,
+        "changeLabel": null,
+        "approximate": false,
+        "verification": "direct_primary"
+      }
+    ],
+    "salary": [
+      {
+        "cityKey": "spb",
+        "id": "salary",
+        "label": "Средняя зарплата",
+        "value": 117177,
+        "decimals": 0,
+        "unit": "₽/мес",
+        "period": "Январь–ноябрь 2025",
+        "geo": "Санкт-Петербург",
+        "geoLevel": "federal_subject",
+        "scope": "Работники организаций. Полнота круга организаций в публикации отдельно не уточнена.",
+        "description": "Средняя начисленная зарплата одного работника за месяц. Это среднее, не медиана.",
+        "url": "https://spbinvestment.ru/content/uploadfiles/itogi.pdf#page=33",
+        "source": "Комитет экономической политики СПб",
+        "published": null,
+        "dateChecked": "2026-10-05",
+        "locator": "PDF, страница 33: заработная плата; сверено также со страницами 4 и 39.",
+        "change": 12.3,
+        "changeLabel": "К январю–ноябрю 2024",
+        "basis": "gross",
+        "verification": "direct_primary",
+        "aggregation": "mean",
+        "evidenceId": "spb_official_2025",
+        "precisionNote": "Рубли, точность исходной публикации."
+      }
+    ],
+    "rent": [
+      {
+        "cityKey": "spb",
+        "city": "Санкт-Петербург",
+        "geo": "Санкт-Петербург",
+        "geoLevel": "city",
+        "source": "ЦИАН.Аналитика",
+        "quality": "C",
+        "frequency": "publication_snapshot",
+        "changeUnit": "% г/г",
+        "id": "rent1",
+        "label": "Средняя аренда 1-к",
+        "value": 45600,
+        "unit": "₽/мес",
+        "period": "Сентябрь 2026",
+        "published": "22.09.2026",
+        "change": -8.4,
+        "scope": "Средняя ставка долгосрочной аренды по предложениям, без элитного сегмента. Не медиана и не цена договора.",
+        "dateChecked": "2026-10-04",
+        "url": "https://corp.cian.ru/news/itogi-3-kvartala-na-rynke-arendy-vpervye-s-2020-g-stavki-nizhe-proshlogodnikh",
+        "periodKey": "2026-09",
+        "evidenceId": "cian_rent_sep_2026",
+        "verification": "direct_primary",
+        "locator": "Приложение, строка Санкт-Петербург, 1-комн.; web line 86",
+        "aggregation": "mean",
+        "priceBasis": "offer",
+        "sampleSize": null,
+        "periodPrecision": "month",
+        "rooms": 1,
+        "segment": "all"
+      },
+      {
+        "cityKey": "krd",
+        "city": "Краснодар",
+        "geo": "Краснодар",
+        "geoLevel": "city",
+        "source": "ЦИАН.Аналитика",
+        "quality": "C",
+        "frequency": "publication_snapshot",
+        "changeUnit": "% г/г",
+        "id": "rent1",
+        "label": "Средняя аренда 1-к",
+        "value": 26300,
+        "unit": "₽/мес",
+        "period": "Сентябрь 2026",
+        "published": "22.09.2026",
+        "change": -1.1,
+        "scope": "Средняя ставка долгосрочной аренды по предложениям, без элитного сегмента. Не медиана и не цена договора.",
+        "dateChecked": "2026-10-04",
+        "url": "https://corp.cian.ru/news/itogi-3-kvartala-na-rynke-arendy-vpervye-s-2020-g-stavki-nizhe-proshlogodnikh",
+        "periodKey": "2026-09",
+        "evidenceId": "cian_rent_sep_2026",
+        "verification": "direct_primary",
+        "locator": "Приложение, строка Краснодар, 1-комн.; web line 70",
+        "aggregation": "mean",
+        "priceBasis": "offer",
+        "sampleSize": null,
+        "periodPrecision": "month",
+        "rooms": 1,
+        "segment": "all"
+      }
+    ]
+  },
+  "evidence": {
+    "universities": {
+      "checkedAt": "2026-10-29",
+      "dataset": "data/additional-universities.json",
+      "purpose": "Выбранные строки первичных таблиц рейтингов для отдельной справки о вузах; не рейтинг городов и не полный реестр образовательных организаций.",
+      "verification": "Три таблицы и их методики открыты непосредственно на сайте RAEX; сверены названия вузов, выпуск, столбец ранга и географический охват. Дата проверки не заменяет год выпуска рейтинга.",
+      "sources": [
+        {
+          "rankingId": "raex-100-2026",
+          "publisher": "RAEX",
+          "sourceURL": "https://raex-rr.com/education/russian_universities/top-100_universities/2026/",
+          "publicationDate": "2026-06-16",
+          "methodologyURL": "https://raex-rr.com/education/russian_universities/top-100_universities/2026/methods/",
+          "valueLocator": "Основная таблица: первый столбец № — текущий ранг 2026. Соседний столбец Место, 2025 год не используется.",
+          "extractedRows": [
+            {
+              "universityId": "spbu",
+              "rank": 4
+            },
+            {
+              "universityId": "spbstu",
+              "rank": 9
+            },
+            {
+              "universityId": "itmo",
+              "rank": 15
+            },
+            {
+              "universityId": "spmi",
+              "rank": 28
+            },
+            {
+              "universityId": "pavlov",
+              "rank": 29
+            },
+            {
+              "universityId": "leti",
+              "rank": 34
+            },
+            {
+              "universityId": "herzen",
+              "rank": 41
+            },
+            {
+              "universityId": "unecon",
+              "rank": 46
+            },
+            {
+              "universityId": "gpmu",
+              "rank": 49
+            },
+            {
+              "universityId": "almazov",
+              "rank": 55
+            },
+            {
+              "universityId": "kubsau",
+              "rank": 66
+            },
+            {
+              "universityId": "kubgmu",
+              "rank": 89
+            }
+          ],
+          "methodReview": {
+            "factorsPercent": {
+              "education": 50,
+              "graduateDemand": 30,
+              "research": 20
+            },
+            "coverage": "Головные организации, без филиалов; исключены творческие, спортивные и силовые вузы. Используются статистика и опросы.",
+            "selection": "Для Петербурга выбраны 10 организаций с наименьшими значениями ранга среди петербургских участников; для Краснодара сохранены оба участника RAEX-100/2026."
+          }
+        },
+        {
+          "rankingId": "three-missions-global-2025",
+          "publisher": "RAEX / Ассоциация составителей рейтингов",
+          "sourceURL": "https://raex-rr.com/education/international_universities/three_missions_Russia/2025/",
+          "publicationDate": "2025-10-14",
+          "methodologyURL": "https://raex-rr.com/education/international_universities/three_missions_Russia/2025/methods/",
+          "valueLocator": "Строки Кубанского государственного университета и Кубанского государственного технологического университета; столбец Место в глобальном рейтинге, не первый столбец российского среза.",
+          "extractedRows": [
+            {
+              "universityId": "kubsu",
+              "nationalRankRangeNotUsed": [
+                113,
+                156
+              ],
+              "globalRankRange": [
+                1751,
+                2000
+              ]
+            },
+            {
+              "universityId": "kubstu",
+              "nationalRankRangeNotUsed": [
+                113,
+                156
+              ],
+              "globalRankRange": [
+                1751,
+                2000
+              ]
+            }
+          ],
+          "methodReview": {
+            "rangeHandling": "Внутри интервальных групп алфавитный порядок; точные места и середины диапазонов не присваиваются.",
+            "coverage": "Международный отбор вузов с ограничениями по профилю и численности; репутационные опросы исключены. Позиция относится к организации, не к отдельной программе.",
+            "editionHandling": "Это проверенный сохранённый выпуск 2025, не заявление об актуальном месте в выпуске 2026."
+          }
+        },
+        {
+          "rankingId": "raex-local-yufo-2026",
+          "publisher": "RAEX",
+          "sourceURL": "https://raex-rr.com/education/local_university_rating/local_university_rating_YUFO/2026/",
+          "publicationDate": "2026-02-26",
+          "methodologyURL": "https://raex-rr.com/education/local_university_rating/local_university_rating_YUFO/2026/methods/",
+          "valueLocator": "Первый столбец № основной таблицы; не отдельные ранги групп Образование, Наука, Общество.",
+          "extractedRows": [
+            {
+              "universityId": "imsit",
+              "rank": 14
+            },
+            {
+              "universityId": "kmi",
+              "rank": 16
+            }
+          ],
+          "methodReview": {
+            "factorsPercent": {
+              "education": 45,
+              "research": 25,
+              "society": 30
+            },
+            "coverage": "22 участника из 7 регионов ЮФО. Филиалы и вузы особой специфики исключены; также исключены участники RAEX-100 или Трёх миссий за 2024–2025 годы.",
+            "identityCheck": "Кубанский медицинский институт (kmi) и Кубанский государственный медицинский университет (kubgmu) — разные организации. Морской университет Ушакова, Сочинский и Армавирский вузы не включены в Краснодар: это другие города края."
+          }
+        }
+      ],
+      "displayRules": [
+        "Группировать по rankingId, рядом всегда показывать название рейтинга, выпуск и охват.",
+        "Не сортировать вместе числовые ранги разных рейтингов, не вычислять среднее место или рейтинг города.",
+        "Диапазон выводить полностью: 1751–2000 в мире; не выдавать 113–156 российского среза за глобальное место.",
+        "Не переносить место головной организации на филиал и не называть выборку полным списком вузов города.",
+        "Рейтинговая позиция не гарантирует качество каждой программы и не определяет предпочтения абитуриента."
+      ]
+    },
+    "trends": {
+      "schemaVersion": 1,
+      "assembledAt": "2026-10-29",
+      "scope": "Supplementary changes from saved verified observations; no fresh source retrieval and no composite standard-of-living score.",
+      "existingVerificationDates": {
+        "housing": "2026-10-04",
+        "averageReferences": "2026-10-05",
+        "hhAndDemography": "2026-10-06"
+      },
+      "hh": {
+        "archive": "data/evidence/hh-cities-snapshot.json",
+        "sourceURL": "https://stats.hh.ru/api/v1/data/RU",
+        "sourceRetrievedAt": "2026-10-06T13:53:12.474Z",
+        "sourceSha256": "e0227e95d1cd206267ffd619db1c9352d0ba4947b7fd3ee83b3f250ce79a87fe",
+        "excerpt": "data/additional-hh-trends.json",
+        "excerptRecheckedAt": "2026-10-29",
+        "selection": "City IDs2/53, all-profession series, month index8, header2025/2026. Raw numeric strings retained; no new percentage changes.",
+        "checks": [
+          "source metadata agrees with saved archive",
+          "city area ID and name",
+          "year header and month index",
+          "previous/current raw strings match exact archive cells",
+          "finite non-negative values",
+          "only hhindex and averageCompensation mapped to the approved indicator IDs"
+        ],
+        "limitation": "Platform HH only. Resumes are not people; the index is not unemployment. Offered salary is a publisher median, not actual pay, and tax basis is unspecified."
+      },
+      "rows": [
+        {
+          "cityKey": "spb",
+          "id": "salary",
+          "file": "data/verified-averages.json",
+          "evidenceId": "spb_official_2025",
+          "locator": "PDF page33",
+          "comparison": "January-November2025 to January-November2024",
+          "changeOrigin": "published source +12.3%, nominal gross mean; not real or median income"
+        },
+        {
+          "cityKey": "spb",
+          "id": "populationChange",
+          "file": "data/verified-city-profile.json",
+          "evidenceId": "pop_components",
+          "locator": "Sheet Всего, C41; components D41/E41",
+          "comparison": "2024 calendar-year change",
+          "changeOrigin": "published official change"
+        },
+        {
+          "cityKey": "krd",
+          "id": "populationCityChange",
+          "file": "data/verified-city-profile.json",
+          "evidenceId": "municipal2025",
+          "locator": "2025 Численность_по_МО C7025; 2024 C7128",
+          "comparison": "published estimates on01.01.2024 and01.01.2025",
+          "changeOrigin": "existing derived difference of published settlement estimates; not migration or natural increase; boundary/revision effects not separated"
+        },
+        {
+          "cityKey": "spb/krd",
+          "id": "rent1",
+          "file": "data/verified-observations.json",
+          "evidenceId": "cian_rent_sep_2026",
+          "comparison": "September2026 snapshot to source previous-year comparison",
+          "changeOrigin": "published source year-on-year percent, mean asking rent excluding elite segment"
+        }
+      ],
+      "interpretationLimit": "A city may show different directions across these metrics. Population growth, nominal wages and HH competition do not individually establish an improvement or deterioration in living standards."
+    },
+    "traffic": {
+      "schemaVersion": 1,
+      "checkedAt": "2026-10-30",
+      "purpose": "Более свежая датированная справка о времени замедления вместо устаревших средних баллов Яндекса. Не является подтверждённой средней загруженностью за 2023–2026.",
+      "source": {
+        "publisher": "2ГИС Компас",
+        "title": "Красный час: как планировка городов влияет на пробки",
+        "url": "https://compass.2gis.ru/traffic/",
+        "publicationPeriod": "2025-03",
+        "observationPeriod": null,
+        "retrievedAt": "2026-10-30",
+        "locator": "Заключительная диаграмма, панели Санкт-Петербурга и Краснодара",
+        "chartURL": "https://compass.2gis.ru/traffic/images/info_17-20.svg"
+      },
+      "evidenceMethod": "Первичная HTML-страница получена напрямую через HTTPS. SVG из её ссылки получен и отрисован Sharp для визуальной сверки панелей обоих городов. Проценты по высоте столбцов не вычислялись. Исходные треки поездок и календарные даты измерений не опубликованы. Контрольные суммы идентифицируют полученные файлы, а не подтверждают методологическое качество.",
+      "retrievedFiles": [
+        {
+          "url": "https://compass.2gis.ru/traffic/",
+          "sha256": "5175f69db1ccea67bf83357267a1dc46722efbec99634686d400f6bb684831a2",
+          "bytes": 102953
+        },
+        {
+          "url": "https://compass.2gis.ru/traffic/images/info_17-20.svg",
+          "sha256": "b86a37e297a729067809d25df0acac6fb6989ad119e63141a406808eae065066",
+          "bytes": 361851
+        }
+      ],
+      "observations": [
+        {
+          "city": "spb",
+          "indicator": "Время наиболее медленного движения в исследовании 2ГИС",
+          "peakWindow": {
+            "from": "17:00",
+            "to": "20:00"
+          },
+          "publicationPeriod": "2025-03",
+          "observationPeriod": null,
+          "annualAverage": null,
+          "sourceId": "twoGisTraffic2025",
+          "scope": "Дороги города, охваченные исследованием 2ГИС; полный перечень и веса не раскрыты",
+          "locator": "Заключительная диаграмма: верхняя средняя панель Санкт-Петербург",
+          "acceptedAs": "Датированная справка о времени суток, без количественной оценки тяжести пробок и без ранжирования городов"
+        },
+        {
+          "city": "krd",
+          "indicator": "Время наиболее медленного движения в исследовании 2ГИС",
+          "peakWindow": {
+            "from": "17:00",
+            "to": "20:00"
+          },
+          "publicationPeriod": "2025-03",
+          "observationPeriod": null,
+          "annualAverage": null,
+          "sourceId": "twoGisTraffic2025",
+          "scope": "Дороги города, охваченные исследованием 2ГИС; полный перечень и веса не раскрыты",
+          "locator": "Заключительная диаграмма: нижняя правая панель Краснодар",
+          "acceptedAs": "Датированная справка о времени суток, без количественной оценки тяжести пробок и без ранжирования городов"
+        }
+      ],
+      "limitations": [
+        "Нет календарного периода исходных наблюдений, размера выборки и весов усреднения.",
+        "Дата публикации не подменяет период измерений.",
+        "Пиковые часы не определяют длительность поездки, годовое среднее или разницу городов.",
+        "Дневной диапазон скорости относительно разрешённой и почасовая скорость относительно среднесуточной — разные метрики; они не объединены."
+      ],
+      "availabilitySearch": {
+        "checkedAt": "2026-10-30",
+        "requestedYears": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "result": "Сопоставимые средние баллы Яндекса или годовые показатели другого проверяемого издателя для обоих городов не подтверждены в проверенных открытых материалах. Это результат поиска, а не утверждение об отсутствии таких данных вообще. Полный 2026 год на дату проверки ещё не завершён.",
+        "checkedPublications": [
+          "https://yandex.ru/company/researches",
+          "https://yandex.ru/company/news/23-12-2025-02",
+          "https://yandex.ru/maps-api/docs/common/common/routing-and-navi.html",
+          "https://compass.2gis.ru/traffic/",
+          "https://ecoindex.2gis.ru/research",
+          "https://www.tomtom.com/traffic-index/",
+          "https://inrix.com/scorecard/"
+        ],
+        "notAccepted": [
+          {
+            "candidate": "Баллы Яндекса за 2013 год",
+            "reason": "Слишком старые для описания современной дорожной ситуации; сохранены только во внутреннем архиве проверки."
+          },
+          {
+            "candidate": "Разовые баллы, максимумы и неуточнённые обычные утренние значения 2023–2026",
+            "reason": "Не являются подтверждённым средним за период."
+          },
+          {
+            "candidate": "Транспортный балл Экоиндекса 2ГИС за 2024",
+            "reason": "Составной показатель транспортной категории, не индекс пробок."
+          },
+          {
+            "candidate": "Средняя длина поездки Яндекс Карт за 2025",
+            "reason": "Расстояние, не загруженность."
+          },
+          {
+            "candidate": "Численные доли дорог из SVG 2ГИС",
+            "reason": "Точные значения не подписаны; по геометрии диаграммы не оценивались."
+          }
+        ]
+      },
+      "retiredEvidence": "data/evidence/additional-yandex-audit.json — архив прежней проверки; не используется в активных карточках и дополнительном выпуске JSON."
+    }
+  }
+}
